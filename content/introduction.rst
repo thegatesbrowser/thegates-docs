@@ -8,14 +8,14 @@ Introduction
 | And those worlds can be made and hosted by everyone.
 
 
-So how is that done?
---------------------
+So how is that works?
+---------------------
 
-It's very similar to how internet (Web) works:
+It's very similar to internet (Web):
 
-#. You type a link of the page you wanna visit.
-#. Browser downloads all the necessary files and opens it.
-#. Here you can find another links and follow them.
+#. You type a link of the world you wanna visit.
+#. TheGates browser downloads all the necessary files and opens it.
+#. Inside this world you can find another links/portals and follow them.
  
 | While Web is build of html and javascript.
 | We have Godot Engine that provides similar functionality.
@@ -29,5 +29,5 @@ Godot uses scenes to describe objects and gdscript to make them behave, so:
 * Scenes (saved to \*.tscn file) == html files.
 * GDScript == javascript.
 
-| And a little magic thing is that godot can export project files into .pck or zip.
-| Then it can load exported files and run them right away ✨
+| And the magic here is that godot can export project files into .pck or zip.
+| Then it can load exported file and run it right away ✨

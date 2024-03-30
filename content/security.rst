@@ -9,8 +9,8 @@ Security Model
 
 Our sandboxing implementation is under development. Current status will be displayed below:
 
-* **Linux** sandboxing is implemented but it's not tested fully, so be careful.
-* **Windows** version doesn't have sandboxing - meaning it's not secure to open non trusted gates.
+* **Linux:** sandboxing is implemented but it's not tested fully, so be careful.
+* **Windows:** doesn't have sandboxing - meaning it's **not secure** to open non trusted gates.
 
 .. note::
 

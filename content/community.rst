@@ -4,7 +4,7 @@ Community
 ==========
 
 | Join our discord community, subscribe to our twitter account!
-| You can ask your questions where you prefer most.
+| Ask your questions wherever you want :\)
 | 
 | Discord : https://discord.gg/JwpScU8xm6
 | Twitter : https://twitter.com/TheGatesBrowser

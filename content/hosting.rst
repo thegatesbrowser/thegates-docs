@@ -43,11 +43,22 @@ Hosting on a server
 -------------------
 
 | Now you are ready to host your project and open it in TheGates.
+| 
+| To test it locally use `python SimpleHttpServer`_ or `Servez`_.
+| 
+| Just start your server, type gate file url in `TheGates app`_ and voilà.
+| Example: ``http://localhost:8000/your_project.gate``
+
+.. _python SimpleHttpServer: https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
+.. _Servez: https://greggman.github.io/servez/
+.. _TheGates app: https://nordup.itch.io/the-gates
 
 .. note:: 
 
-   Further steps are optional and not required.
-   If you have any difficulties ask the :ref:`community <doc_content_community>`.
+   | If you have any difficulties ask the :ref:`community <doc_content_community>`.
+     We also help hosting on our own servers.
+   | 
+   | **Further steps are optional and not required.**
 
 Linking
 -------
@@ -57,9 +68,7 @@ To make a user to follow a link to another gate call from GDScript:
 .. code-block:: python
 
    if get_tree().has_method("open_gate"):
-      get_tree().open_gate(url)
-   
-   # url to gate file
+      get_tree().open_gate("https://example.com/project.gate")
 
 GDExtension
 -----------
@@ -94,5 +103,5 @@ To load gdextension shared libraries:
 
 .. warning:: 
 
-   **Windows**, **Linux** and **MacOS** libraries required.
-   **Debug** and **Release** also required \(can be the same file\).
+   | **Windows**, **Linux** and **MacOS** libraries required.
+   | **Debug** and **Release** also required \(can be the same file\).

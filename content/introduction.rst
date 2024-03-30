@@ -1,3 +1,5 @@
+.. _doc_content_intro:
+
 Introduction
 ============
 

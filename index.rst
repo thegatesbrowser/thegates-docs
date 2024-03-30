@@ -21,4 +21,4 @@ TheGates Docs
    content/introduction.rst
    content/hosting.rst
    content/security.rst
-   content/help.rst
+   content/community.rst

@@ -1,3 +1,5 @@
+.. _doc_content_hosting:
+
 Hosting your projects
 ========================
 

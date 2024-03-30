@@ -1,4 +1,6 @@
-Need Help?
+.. _doc_content_community:
+
+Community
 ==========
 
 | Join our discord community, subscribe to our twitter account!

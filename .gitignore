@@ -94,6 +94,9 @@ docs/_build/
 .pybuilder/
 target/
 
+# IDE
+.vscode/
+
 # Jupyter Notebook
 
 # IPython

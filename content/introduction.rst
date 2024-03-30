@@ -18,7 +18,7 @@ It's very similar to internet (Web):
 #. Inside this world you can find another links/portals and follow them.
  
 | While Web is build of html and javascript.
-| We have Godot Engine that provides similar functionality.
+| We have **Godot Engine** that provides similar functionality.
 
 
 Why Godot Engine works like html and javascript?

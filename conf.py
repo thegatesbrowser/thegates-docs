@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'TheGates'
-copyright = '2024 Nordup'
+copyright = '2024-present Nordup'
 author = 'Nordup'
 
 release = '(latest)'

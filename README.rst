@@ -1,9 +1,10 @@
-Template for the Read the Docs tutorial
+TheGates documenation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This repository contains the source files of TheGates_ documentation, in reStructuredText markup language (reST).
 
-Read the tutorial here:
+They are meant to be parsed with the Sphinx_ documentation builder to build the HTML documentation on `TheGates Docs`_ website.
 
-https://docs.readthedocs.io/en/stable/tutorial/
+.. _TheGates: <https://nordup.itch.io/the-gates>
+.. _Sphinx: <https://www.sphinx-doc.org/>
+.. _`TheGates Docs`: <thegates-docs.readthedocs.io>

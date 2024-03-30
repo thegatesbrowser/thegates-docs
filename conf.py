@@ -2,19 +2,17 @@
 
 # -- Project information
 
-project = 'TheGates Docs'
+project = 'TheGates'
 copyright = '2024-present Nordup'
 author = 'Nordup'
 
-release = '0.7'
+release = '(latest)'
 version = '0.7.6'
 
 # -- General configuration
 
 extensions = [
     'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
 ]

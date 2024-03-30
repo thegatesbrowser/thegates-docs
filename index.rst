@@ -1,14 +1,16 @@
-Welcome to TheGates documentation!
+TheGates Docs
 ====================================
 
-**TheGates** is an open-source 2D and 3D internet browser build with Godot Engine
+Welcome to TheGates documenation! **TheGates** is an open-source 2D and 3D internet browser build with Godot Engine
 
 .. note::
-
+   
    This project is under active development.
 
-Contents
---------
-
 .. toctree::
-   source/exporting.rst
+   :hidden:
+   :maxdepth: 1
+
+   content/introduction.rst
+   content/exporting.rst
+   content/help.rst

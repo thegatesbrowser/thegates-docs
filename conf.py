@@ -78,3 +78,8 @@ ogp_site_url = "https://thegates.readthedocs.io"
 ogp_image = "https://thegates.readthedocs.io/en/latest/_static/social.png"
 ogp_description_length = 204
 ogp_type = "website"
+
+ogp_custom_meta_tags = [
+    '<meta property="og:image:width" content="1200" />',
+    '<meta property="og:image:height" content="630" />'
+]

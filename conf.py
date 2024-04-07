@@ -65,11 +65,21 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+html_static_path = ['_static']
 
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {'navigation_depth': 2, 'collapse_navigation': False}
 
-# -- Options for EPUB output
-epub_show_urls = 'footnote'
+# -- Options for OpenGraph
+
+ogp_site_url = "https://thegates.readthedocs.io"
+ogp_image = "https://thegates.readthedocs.io/_static/icon_256.png"
+ogp_type = "website"
+
+ogp_social_cards = {
+    "image" : "content/img/icon_256.png",
+    "site_url" : "thegates.readthedocs.io",
+    "line_color" : "#772fff"
+}

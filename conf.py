@@ -78,9 +78,3 @@ ogp_site_url = "https://thegates.readthedocs.io"
 ogp_image = "https://thegates.readthedocs.io/en/latest/_static/social.png"
 ogp_description_length = 204
 ogp_type = "website"
-
-ogp_social_cards = {
-    "image" : "content/img/icon_256.png",
-    "site_url" : "thegates.readthedocs.io",
-    "line_color" : "#772fff"
-}

@@ -80,6 +80,6 @@ ogp_description_length = 204
 ogp_type = "website"
 
 ogp_custom_meta_tags = [
-    '<meta property="og:image:width" content="1200" />',
-    '<meta property="og:image:height" content="630" />'
+    '<meta name="twitter:card" content="summary_large_image">',
+    '<meta name="twitter:site" content="@TheGatesBrowser">'
 ]

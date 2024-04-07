@@ -1,4 +1,4 @@
-matplotlib=3.8.4
+matplotlib==3.8.4
 
 # Sphinx base and RTD theme.
 sphinx==7.1.2

@@ -76,7 +76,7 @@ html_theme_options = {'navigation_depth': 2, 'collapse_navigation': False}
 
 ogp_site_url = "https://thegates.readthedocs.io"
 ogp_image = "https://thegates.readthedocs.io/en/latest/_static/social.png"
-ogp_description_length = 300
+ogp_description_length = 204
 ogp_type = "website"
 
 ogp_social_cards = {

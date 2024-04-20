@@ -9,4 +9,4 @@ Community
 | Discord     : https://discord.gg/JwpScU8xm6
 | Twitter     : https://twitter.com/TheGatesBrowser
 | Email       : thegates.browser@gmail.com
-| Other links : https://linkin.bio/thegates
+| Other links : https://lnk.bio/thegates

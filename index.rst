@@ -8,7 +8,7 @@ TheGates Docs
 | MacOS support is coming soon!
 | 
 | `Download from itch.io <https://nordup.itch.io/the-gates>`__
-| `Other links <https://linkin.bio/thegates>`_
+| `Other links <https://lnk.bio/thegates>`_
 
 .. note::
 

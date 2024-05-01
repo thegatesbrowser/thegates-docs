@@ -36,8 +36,13 @@ Exporting
 
 | After doing this you will have 3 files: **project pack**, **thumbnail image**, **gate file**.
 
+.. note:: 
+
+   | You can use `TheGates Export Plugin`_ that creates everything for you.
+
 .. _demo project: https://drive.google.com/file/d/1Vhf-NlfKl3oCEglXQRu3TP1yOdlPUMrF/view
 .. _exporting packs: https://docs.godotengine.org/en/stable/tutorials/export/exporting_pcks.html
+.. _TheGates Export Plugin: https://godotengine.org/asset-library/asset/2882
 
 Hosting on a server
 -------------------
@@ -56,9 +61,9 @@ Hosting on a server
 .. note:: 
 
    | If you have any difficulties ask the :ref:`community <doc_content_community>`.
-     We also help hosting on our own servers.
+   | To host on our server email us on thegates.browser@gmail.com
    | 
-   | **Further steps are optional and not required.**
+   | Further steps are optional and not required.
 
 Linking
 -------

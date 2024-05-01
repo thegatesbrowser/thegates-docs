@@ -12,7 +12,7 @@ copyright = '2024-present Nordup'
 author = 'Nordup'
 
 release = '(latest)'
-version = '0.7.6'
+version = '0.7.11'
 
 # -- General configuration ------------------------------------------------
 

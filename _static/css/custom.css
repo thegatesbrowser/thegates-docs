@@ -1,18 +1,10 @@
 /* Main sections */
 
-.wy-nav-content-wrap {
-    background-color: var(--content-wrap-background-color);
-}
-
-.wy-nav-content {
-    background-color: var(--content-background-color);
-    max-width: 900px;
-}
-
-.wy-body-for-nav {
-    position: relative;
-    background-color: var(--content-wrap-background-color);
-    overflow: visible;
+@media only screen and (min-width: 769px) {
+    .wy-nav-side {
+        /* Required to center the page on wide displays */
+        left: inherit;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -20,5 +12,12 @@
         /* Center the page on wide displays for better readability */
         max-width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .rst-versions {
+        /* Required to center the page on wide displays */
+        left: inherit;
     }
 }

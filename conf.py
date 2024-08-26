@@ -7,12 +7,12 @@ import os
 
 # -- Project information
 
-project = 'TheGates'
-copyright = '2024-present Nordup'
-author = 'Nordup'
+project = "TheGates"
+copyright = "2024-present Nordup"
+author = "Nordup"
 
-release = '(latest)'
-version = '0.7.11'
+release = "(latest)"
+version = "0.9.5"
 
 # -- General configuration ------------------------------------------------
 
@@ -59,18 +59,24 @@ notfound_context = {
 }
 
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    "python": ("https://docs.python.org/3/", None),
+    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
 }
-intersphinx_disabled_domains = ['std']
+intersphinx_disabled_domains = ["std"]
 
-templates_path = ['_templates']
-html_static_path = ['_static']
+templates_path = ["_templates"]
+html_static_path = ["_static"]
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
-html_theme_options = {'navigation_depth': 2, 'collapse_navigation': False}
+html_theme = "sphinx_rtd_theme"
+html_theme_options = {"navigation_depth": 2, "collapse_navigation": False}
+
+# --  Link the custom CSS file
+
+html_css_files = [
+    "css/custom.css"
+]
 
 # -- Options for OpenGraph
 

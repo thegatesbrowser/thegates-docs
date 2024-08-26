@@ -1,0 +1,24 @@
+/* Main sections */
+
+.wy-nav-content-wrap {
+    background-color: var(--content-wrap-background-color);
+}
+
+.wy-nav-content {
+    background-color: var(--content-background-color);
+    max-width: 900px;
+}
+
+.wy-body-for-nav {
+    position: relative;
+    background-color: var(--content-wrap-background-color);
+    overflow: visible;
+}
+
+@media only screen and (min-width: 769px) {
+    .wy-body-for-nav {
+        /* Center the page on wide displays for better readability */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

@@ -63,7 +63,7 @@ Hosting on a server
    | If you have any difficulties ask the :ref:`community <doc_content_community>`.
    | To host on our server email us on thegates.browser@gmail.com
    | 
-   | Further steps are optional and not required.
+   | * Further steps are optional and not required.
 
 Linking
 -------

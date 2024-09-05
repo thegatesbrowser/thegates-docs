@@ -72,8 +72,8 @@ To make a user to follow a link to another gate call from GDScript:
 
 .. code-block:: python
 
-   if get_tree().has_method("open_gate"):
-      get_tree().open_gate("https://example.com/project.gate")
+   if get_tree().has_method("send_command"):
+      get_tree().send_command("open_gate", ["https://example.com/project.gate"])
 
 GDExtension
 -----------

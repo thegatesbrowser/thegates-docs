@@ -10,7 +10,7 @@ Introduction
 .. _Ready Player One: https://en.wikipedia.org/wiki/Ready_Player_One_(film)
 
 
-So how is that works?
+So how does that work?
 ---------------------
 
 It's very similar to internet \(world wide web\):

@@ -3,7 +3,7 @@
 Hosting your projects
 =====================
 
-To host your project, first you need to make sure it's compatable with `Godot Engine 4.2`_.
+To host your project, first you need to make sure it's compatable with `Godot Engine 4.3`_.
 
 .. _Godot Engine 4.2: https://godotengine.org/download/archive/
 

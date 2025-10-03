@@ -24,12 +24,6 @@ Our vision
 | Learning becomes more immersive and efficient through interactive worlds. 
 | This shift sparks a new ecosystem of internet projects and innovation.
 
-What we've built
-----------------
-
-| The project is live today. Download the 3D browser, visit an online multiplayer hub, and explore community projects. Anyone can host their own worlds by following the docs.
-| Everything is open-source: see the repositories and join the community.
-
 Links
 -----
 
@@ -46,12 +40,12 @@ Links
 .. toctree::
    :hidden:
 
+   content/introduction.rst
    content/quickstart.rst
    content/deploy.rst
-   content/introduction.rst
    content/hosting.rst
    content/engine_commands.rst
    content/security.rst
+   content/contribute.rst
    content/community.rst
    content/faq.rst
-   content/contribute.rst

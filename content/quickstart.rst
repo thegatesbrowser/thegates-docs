@@ -3,13 +3,14 @@
 Quickstart
 ==========
 
-Get from zero to your first world running in TheGates.
+This page is a short overview with links to the full guides.
 
 Prerequisites
 -------------
 
 * Install `Godot Engine 4.5 <https://godotengine.org/download/>`__.
 * In your project, set the rendering method to ``Forward+``.
+* For a complete step‑by‑step, see :ref:`doc_content_hosting`.
 
 Start from the template (recommended)
 -------------------------------------
@@ -31,8 +32,8 @@ The template includes:
 * Ready‑to‑use client/server multiplayer
 * 3D positional voice chat (VOIP) and basic UI
 
-Create your gate
-----------------
+Create your gate (summary)
+--------------------------
 
 1. Export your project as a pack file (``.zip`` preferred). See `exporting packs <https://docs.godotengine.org/en/stable/tutorials/export/exporting_pcks.html>`__.
 2. Create a thumbnail image (``.png``, 16:9 preferred).
@@ -78,16 +79,18 @@ From GDScript, you can open another gate URL:
    if get_tree().has_method("send_command"):
        get_tree().send_command("open_gate", ["https://example.com/project.gate"])
 
-Using GDExtension (optional)
-----------------------------
+GDExtension (optional)
+----------------------
 
 To load native libraries, add a ``[libraries]`` section to your gate file and provide platform builds. See :ref:`doc_content_hosting` for details and requirements.
 
 Next steps
 ----------
 
-* Read :ref:`doc_content_hosting` for deployment options and GDExtension setup.
-* See :ref:`doc_content_intro` to understand how the 3D Internet model works.
+* Read :ref:`doc_content_hosting` for the full workflow.
+* Deploy to the web: :ref:`doc_deploy`.
+* Use engine commands: :ref:`doc_engine_commands`.
+* Learn the model: :ref:`doc_content_intro`.
 * Join the :ref:`doc_content_community` for help and feedback.
 
 

@@ -44,9 +44,7 @@ Example
 
    func _on_portal_body_entered(_body: Node) -> void:
        if get_tree().has_method("send_command"):
-           get_tree().send_command("open_gate", [
-               "https://your.domain/another_world.gate"
-           ])
+           get_tree().send_command("open_gate", ["https://your.domain/another_world.gate"])
 
 Notes
 -----
@@ -59,5 +57,3 @@ See also
 
 * :ref:`doc_content_hosting`
 * :ref:`doc_quickstart`
-
-

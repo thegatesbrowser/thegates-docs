@@ -1,10 +1,10 @@
 TheGates Docs
 ====================================
 
-| **TheGates** is a free and open-source 3D internet browser build with `Godot Engine <https://godotengine.org/>`__.
-| It connects game experiences together like world wide web and allows you to easily access them without installing.
+| **TheGates** is a free and open-source 3D internet browser built with `Godot Engine <https://godotengine.org/>`__.
+| It connects game experiences together like the World Wide Web and allows you to easily access them without installing.
 | 
-| Available on Windows, Linux and MacOS
+| Available on Windows, Linux, and macOS
 | 
 | `Download from itch.io <https://nordup.itch.io/the-gates>`__
 | `Other links <https://lnk.bio/thegates>`_

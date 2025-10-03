@@ -7,10 +7,10 @@ Security Model
 | It's when the proccess running untrusted code is isolated from the operating system
   and cannot cause any harm or steal any data.
 | 
-| Our sandboxing implementation is under development. Current status will be displayed below:
-
-* **Linux:** sandboxing is implemented but it's not tested fully, so be careful.
-* **Windows / MacOS:** doesn't have sandboxing - meaning it's **not secure** to open non trusted gates.
+| Our sandboxing implementation is currently under development in this branch:
+| `https://github.com/thegatesbrowser/godot/tree/chromium-sandboxing <https://github.com/thegatesbrowser/godot/tree/chromium-sandboxing>`__
+| 
+| Meanwhile, all new projects hosted are monitored and checked for security.
 
 .. _sandboxing: https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/design/sandbox.md
 

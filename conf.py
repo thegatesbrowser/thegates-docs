@@ -12,7 +12,7 @@ copyright = "2024-present Nordup"
 author = "Nordup"
 
 release = "(latest)"
-version = "0.14.2"
+version = "0.23.0"
 
 # -- General configuration ------------------------------------------------
 
@@ -64,6 +64,7 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ["std"]
 
+exclude_patterns = ["_build", "build", ".venv", ".venv/**"]
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 

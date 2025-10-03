@@ -3,7 +3,7 @@
 Community
 ==========
 
-| Join our discord community, subscribe to our twitter account!
+| Join our Discord community, subscribe to our Twitter account!
 | Ask your questions wherever you want :\)
 | 
 | Discord     : https://discord.gg/JwpScU8xm6

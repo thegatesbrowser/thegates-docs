@@ -3,38 +3,42 @@
 Hosting your projects
 =====================
 
-To host your project, first you need to make sure it's compatable with `Godot Engine 4.3`_.
+To host your project, first you need to make sure it's compatible with `Godot Engine 4.5`_.
 
-.. _Godot Engine 4.3: https://godotengine.org/download/archive/
+And set rendering method as ``Forward+``.
+
+.. _Godot Engine 4.5: https://godotengine.org/download/
 
 Exporting
 ---------
 
-| Then you need to create some files. Download and check out `demo project`_ as example.
+| Then you need to create some files. Download and check out the `demo project`_ as an example.
 | 
-| 1. Export your project as pack file **\(zip preffered\)**. See godot documantation on `exporting packs`_.
+| 1. Export your project as a pack file **\(zip preferred\)**. See Godot documentation on `exporting packs`_.
 
 .. image:: img/export_pck.png
    :height: 350
 
-| 2. Create thumbnail image **\(png, 16:9 preffered\)**.
+| 2. Create thumbnail image **\(png, 16:9 preferred\)**.
 | 
 | 3. Create gate file as shown below.
 
-.. code-block:: ini
+.. code-block:: toml
 
    # your_project.gate
    [gate]
 
    title="Your project name"
    description="This will be in search"
+   icon=""
    image="path/image.png"
    resource_pack="path/pack.zip"
+   godot_version="4.5"
 
    # 'path' relative to your gate file
    # or absolute url
 
-| After doing this you will have 3 files: **project pack**, **thumbnail image**, **gate file**.
+| After doing this, you will have 3 files: **project pack**, **thumbnail image**, **gate file**.
 
 .. note:: 
 
@@ -49,9 +53,9 @@ Hosting on a server
 
 | Now you are ready to host your project and open it in TheGates.
 | 
-| To test it locally use `python SimpleHttpServer`_ or `Servez`_.
+| To test it locally, use `python SimpleHttpServer`_ or `Servez`_.
 | 
-| Just start your server, type gate file url in `TheGates app`_ and voilà.
+| Just start your server, type the gate file URL in `TheGates app`_, and voilà.
 | Example: ``http://localhost:8000/your_project.gate``
 
 .. _python SimpleHttpServer: https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
@@ -68,7 +72,7 @@ Hosting on a server
 Linking
 -------
 
-To make a user to follow a link to another gate call from GDScript:
+To make a user follow a link to another gate, call from GDScript:
 
 .. code-block:: python
 
@@ -78,13 +82,13 @@ To make a user to follow a link to another gate call from GDScript:
 GDExtension
 -----------
 
-To load gdextension shared libraries:
+To load GDExtension shared libraries:
 
-* Copy gdextension file section **\[libraries\]** to gate file.
+* Copy the GDExtension file section **\[libraries\]** to the gate file.
 
-* Edit paths to much their relative url paths.
+* Edit paths to match their relative URL paths.
 
-.. code-block:: ini
+.. code-block:: toml
 
    # your_project.gate
    [gate]
@@ -108,5 +112,5 @@ To load gdextension shared libraries:
 
 .. warning:: 
 
-   | **Windows**, **Linux** and **MacOS** libraries required.
-   | **Debug** and **Release** also required \(can be the same file\).
+   | **Windows**, **Linux**, and **macOS** libraries required.
+   | **Debug** and **Release** are also required \(can be the same file\).

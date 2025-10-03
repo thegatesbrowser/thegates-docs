@@ -28,7 +28,7 @@ Why does Godot Engine work like HTML and JavaScript?
 
 Godot uses scenes to describe objects and GDScript to make them behave, so:
 
-.. code-block:: toml
+.. code-block:: ini
 
    Scenes (saved to tscn file) = html files.
    GDScript = javascript.

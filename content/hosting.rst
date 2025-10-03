@@ -60,9 +60,9 @@ Hosting on a server
 
 .. _python SimpleHttpServer: https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
 .. _Servez: https://greggman.github.io/servez/
-.. _TheGates app: https://nordup.itch.io/the-gates
+.. _TheGates app: https://thegates.io/
 
-.. note:: 
+.. note::
 
    | If you have any difficulties ask the :ref:`community <doc_content_community>`.
    | To host on our server email us on thegates.browser@gmail.com
@@ -78,6 +78,8 @@ To make a user follow a link to another gate, call from GDScript:
 
    if get_tree().has_method("send_command"):
       get_tree().send_command("open_gate", ["https://example.com/project.gate"])
+
+See more in :ref:`doc_engine_commands`.
 
 GDExtension
 -----------

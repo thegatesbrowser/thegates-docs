@@ -1,4 +1,13 @@
 /**
+ * This file is adapted from the Godot Engine documentation theme assets.
+ *
+ * Source: https://github.com/godotengine/godot-docs
+ * Component: _static/css/godot-custom.css
+ * License: Creative Commons Attribution 3.0 (CC BY 3.0)
+ * License URL: https://creativecommons.org/licenses/by/3.0/
+ * Copyright: The Godot Engine Documentation contributors
+ * Modifications: none (file used as-is)
+ *
  * Various tweaks to the Read the Docs theme to better conform with Godot's
  * visual identity. Many colors are also overridden to use CSS variables.
  * This makes it possible to provide an automatically-used dark theme
@@ -1951,4 +1960,9 @@ p + .classref-constant {
     margin: auto 2px;
     border: 0px solid #7fbbe3;
     background: var(--role-button-background-color);
+}
+
+/* Render newlines from conf.py copyright as line breaks */
+footer div[role="contentinfo"] p {
+    white-space: pre-line;
 }

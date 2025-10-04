@@ -1,3 +1,13 @@
+//
+// This file is adapted from the Godot Engine documentation theme assets.
+//
+// Source: https://github.com/godotengine/godot-docs
+// Component: _static/js/godot-custom.js
+// License: Creative Commons Attribution 3.0 (CC BY 3.0)
+// License URL: https://creativecommons.org/licenses/by/3.0/
+// Copyright: The Godot Engine Documentation contributors
+// Modifications: none (file used as-is)
+//
 // Handle page scroll and adjust sidebar accordingly.
 
 // Each page has two scrolls: the main scroll, which is moving the content of the page;

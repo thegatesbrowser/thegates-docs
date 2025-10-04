@@ -8,7 +8,7 @@ import os
 # -- Project information
 
 project = "TheGates"
-copyright = "2024-present Nordup"
+copyright = "2025-present Nordup\nIncludes Godot Docs theme assets by the Godot Engine Documentation contributors (CC BY 3.0)"
 author = "Nordup"
 
 release = "(latest)"
@@ -72,7 +72,7 @@ html_context = {
     "display_github": True,
     "github_user": "thegatesbrowser",
     "github_repo": "thegates-docs",
-    "github_version": "updating-docs",
+    "github_version": "main",
     "conf_py_path": "/",
 }
 # static files (css/js)

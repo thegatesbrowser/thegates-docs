@@ -47,5 +47,5 @@ Links
    content/engine_commands.rst
    content/security.rst
    content/contribute.rst
-   content/community.rst
    content/faq.rst
+   content/community.rst

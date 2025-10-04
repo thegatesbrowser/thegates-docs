@@ -1,0 +1,15 @@
+{% extends '!layout.html' %}
+
+{% block sidebartitle %}
+  {{ super() }}
+{% endblock %}
+
+{% block sourcelink %}
+  {# Replace default source link with Edit on GitHub when context is set #}
+  {% if display_github %}
+    <a class="fa fa-github reference external" href="https://github.com/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst" rel="nofollow"> Edit on GitHub</a>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+

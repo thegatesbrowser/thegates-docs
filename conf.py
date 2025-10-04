@@ -66,17 +66,35 @@ intersphinx_disabled_domains = ["std"]
 
 exclude_patterns = ["_build", "build", ".venv", ".venv/**"]
 templates_path = ["_templates"]
+
+# GitHub edit link setup (replaces the default "View page source")
+html_context = {
+    "display_github": True,
+    "github_user": "thegatesbrowser",
+    "github_repo": "thegates-docs",
+    "github_version": "updating-docs",
+    "conf_py_path": "/",
+}
+# static files (css/js)
 html_static_path = ["_static"]
 
 # -- Options for HTML output
 
 html_theme = "sphinx_rtd_theme"
-html_theme_options = {"navigation_depth": 2, "collapse_navigation": False}
+html_theme_options = {
+    "navigation_depth": 2,
+    "collapse_navigation": False
+}
 
 # --  Link the custom CSS file
 
 html_css_files = [
-    "css/custom.css"
+    "css/godot-custom.css"
+]
+
+# Load Godot custom sidebar/behavior JS (relies on jQuery included by RTD theme)
+html_js_files = [
+    "js/godot-custom.js",
 ]
 
 # -- Options for OpenGraph

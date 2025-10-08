@@ -39,13 +39,37 @@ Links
 
 .. toctree::
    :hidden:
+   :maxdepth: 1
+   :caption: About
+   :name: sec-general
 
-   content/introduction.rst
-   content/quickstart.rst
-   content/deploy.rst
-   content/hosting.rst
-   content/engine_commands.rst
-   content/security.rst
-   content/contribute.rst
-   content/faq.rst
-   content/community.rst
+   about/introduction.rst
+   about/security.rst
+   about/faq.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Getting started
+   :name: sec-getting-started
+
+   getting-started/quickstart.rst
+   getting-started/hosting.rst
+   getting-started/deploy.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Guides
+   :name: sec-guides
+
+   guides/engine_commands.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Community
+   :name: sec-community
+
+   community/contribute.rst
+   community/community.rst

@@ -307,7 +307,14 @@ const registerOnScrollEvent = (function(){
   };
   
   $(document).ready(() => {
-    const httpResponseStatus = window.performance.getEntries()[0].responseStatus;
+    // Be defensive: not all environments expose navigation entries or responseStatus.
+    let httpResponseStatus = undefined;
+    try {
+      const entries = (window.performance && typeof window.performance.getEntries === 'function') ? window.performance.getEntries() : [];
+      httpResponseStatus = (entries && entries.length > 0) ? entries[0].responseStatus : undefined;
+    } catch (e) {
+      // Ignore – used only to detect 404s on RTD
+    }
     if (httpResponseStatus === 404) {
       // Check for redirects if on a currently invalid page.
       // This is done in JavaScript, as we exceed Read the Docs' limit for the amount of redirects configurable.
@@ -418,8 +425,9 @@ const registerOnScrollEvent = (function(){
       codeBlock.innerHTML = html;
     }
   
-    // See `godot_is_latest` in conf.py
-    const isLatest = document.querySelector('meta[name=doc_is_latest]').content.toLowerCase() === 'true';
+    // See `godot_is_latest` in conf.py (present in Godot docs). Guard for local builds.
+    const latestMeta = document.querySelector('meta[name=doc_is_latest]');
+    const isLatest = latestMeta ? latestMeta.content.toLowerCase() === 'true' : false;
     if (isLatest) {
       // Add a compatibility notice using JavaScript so it doesn't end up in the
       // automatically generated `meta description` tag.

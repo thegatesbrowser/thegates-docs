@@ -14,3 +14,6 @@ sphinx-copybutton==0.5.2
 sphinx-notfound-page==1.0.0
 # Adds Open Graph tags in the HTML `<head>` tag.
 sphinxext-opengraph==0.9.1
+
+# `.. video::` directive support to embed videos in documentation pages.
+sphinxcontrib-video==0.4.1

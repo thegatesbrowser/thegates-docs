@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build-docs",
+        "type": "shell",
+        "command": ". ${workspaceFolder}/.venv/bin/activate && make clean && make html",
+        "problemMatcher": []
+      }
+    ]
+}

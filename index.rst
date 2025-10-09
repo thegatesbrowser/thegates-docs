@@ -1,7 +1,8 @@
 TheGates Docs
 =============
 
-| **TheGates** is a new social internet platform built with `Godot Engine <https://godotengine.org/>`__.
+| **TheGates** is a new web ecosystem focused on building communities, social gaming, and experiences,
+  built with `Godot Engine <https://godotengine.org/>`__.
   It connects game experiences together like the World Wide Web and allows you to easily access them without installing.
 | 
 | Available on Windows, Linux, and macOS

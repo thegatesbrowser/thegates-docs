@@ -93,6 +93,4 @@ Next steps
 ----------
 
 * See :ref:`doc_quickstart` and :ref:`doc_content_hosting`
-* Link to other worlds: see :ref:`doc_engine_commands`
-
-
+* Link to other worlds: see :ref:`doc_command_channel`

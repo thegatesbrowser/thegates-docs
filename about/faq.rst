@@ -1,7 +1,7 @@
 .. _doc_faq:
 
-FAQ
-===
+Frequently asked questions
+==========================
 
 Is this a new metaverse?
 ------------------------

@@ -79,7 +79,7 @@ To make a user follow a link to another gate, call from GDScript:
    if get_tree().has_method("send_command"):
       get_tree().send_command("open_gate", ["https://example.com/project.gate"])
 
-See more in :ref:`doc_engine_commands`.
+See more in :ref:`doc_command_channel`.
 
 GDExtension
 -----------

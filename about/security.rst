@@ -1,6 +1,6 @@
 .. _doc_content_security:
 
-Security Model
+Security model
 ==============
 
 | All modern browsers come with the feature called `sandboxing`_.

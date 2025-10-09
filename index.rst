@@ -1,8 +1,8 @@
 TheGates Docs
-====================================
+=============
 
-| **TheGates** is a free and open-source 3D internet browser built with `Godot Engine <https://godotengine.org/>`__.
-| It connects game experiences together like the World Wide Web and allows you to easily access them without installing.
+| **TheGates** is a new social internet platform built with `Godot Engine <https://godotengine.org/>`__.
+  It connects game experiences together like the World Wide Web and allows you to easily access them without installing.
 | 
 | Available on Windows, Linux, and macOS
 
@@ -60,10 +60,10 @@ Links
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Guides
-   :name: sec-guides
+   :caption: Reference
+   :name: sec-reference
 
-   guides/engine_commands.rst
+   reference/command_channel.rst
 
 .. toctree::
    :hidden:

@@ -89,7 +89,7 @@ Next steps
 
 * Read :ref:`doc_content_hosting` for the full workflow.
 * Deploy to the web: :ref:`doc_deploy`.
-* Use engine commands: :ref:`doc_engine_commands`.
+* Use engine commands: :ref:`doc_command_channel`.
 * Learn the model: :ref:`doc_content_intro`.
 * Join the :ref:`doc_content_community` for help and feedback.
 

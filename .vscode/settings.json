@@ -11,7 +11,7 @@
     },
     "makefile.configureOnOpen": false,
     "triggerTaskOnSave.tasks": {
-        "build-docs": [
+        "build html": [
             "*.rst"
         ]
     }

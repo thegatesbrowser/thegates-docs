@@ -8,7 +8,7 @@ import os
 # -- Project information
 
 project = "TheGates"
-copyright = "2025-present Nordup\nIncludes Godot Docs theme assets by the Godot Engine Documentation contributors (CC BY 3.0)"
+copyright = "2023-present Nordup and TheGates community.\nIncludes Godot Docs theme assets by the Godot Engine Documentation contributors"
 author = "Nordup"
 
 release = "(latest)"

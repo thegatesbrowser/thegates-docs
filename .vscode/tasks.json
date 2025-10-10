@@ -2,9 +2,17 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build-docs",
+        "label": "build clean",
+        "group": "build",
         "type": "shell",
         "command": ". ${workspaceFolder}/.venv/bin/activate && make clean && make html",
+        "problemMatcher": []
+      },
+      {
+        "label": "build html",
+        "group": "build",
+        "type": "shell",
+        "command": ". ${workspaceFolder}/.venv/bin/activate && make html",
         "problemMatcher": []
       }
     ]

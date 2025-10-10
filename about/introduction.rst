@@ -10,6 +10,28 @@ Introduction
 .. _Ready Player One: https://en.wikipedia.org/wiki/Ready_Player_One_(film)
 
 
+What is TheGates?
+-----------------
+| **TheGates** is a new web ecosystem focused on building communities, social gaming, and experiences, built with `Godot Engine <https://godotengine.org/>`__.
+| It connects game experiences together like the World Wide Web and allows you to easily access them without installing.
+|
+| Available on Windows, Linux, and macOS
+
+3D Internet
+-----------
+| We imagine the internet as a shared 3D space with physics where people and organizations can interact, learn, and create together — not just click through 2D pages.
+| TheGates connects standalone Godot projects into a browsable network of worlds.
+
+Why it matters
+--------------
+| Meeting people in a 3D space and interacting beyond text can be a powerful experience for community and learning.
+
+Vision
+------
+| 3D spaces evolve into hubs for hanging out, games, music, art, and live shows. 
+| Learning becomes more immersive and efficient through interactive worlds. 
+| This shift sparks a new ecosystem of internet projects and innovation.
+
 How does it work?
 -----------------
 

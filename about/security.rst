@@ -16,5 +16,5 @@ Security model
 
 .. note::
 
-   If you are familiar with C++ and wanna help, please contact us.
-   We would appreciate any help. Links are in the :ref:`community page <doc_content_community>`.
+  If you are familiar with C++ and wanna help, please contact us.
+  We would appreciate any help. Links are in the :ref:`community page <doc_content_community>`.

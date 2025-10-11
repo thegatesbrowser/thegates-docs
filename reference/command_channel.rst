@@ -83,4 +83,4 @@ See also
 --------
 
 * :ref:`doc_quickstart`
-* :ref:`doc_content_community`
+* :ref:`doc_community`

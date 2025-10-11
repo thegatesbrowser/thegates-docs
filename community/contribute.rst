@@ -3,7 +3,7 @@
 Contributing and Joining
 ========================
 
-Make an impact by helping shape the future of the 3D Internet.
+| Make an impact by helping shape the future of the 3D Internet.
 
 How you can contribute
 ----------------------
@@ -24,8 +24,5 @@ Get connected
 Start here
 ----------
 
-* Build your first world with :ref:`doc_quickstart` and :ref:`doc_content_hosting`.
-* Read :ref:`doc_content_security` if you want to help with sandboxing.
-* Share your ideas and proposals in :ref:`doc_content_community`.
-
-
+* Build your first world with :ref:`doc_quickstart`.
+* Read :ref:`doc_security` if you want to help with sandboxing.

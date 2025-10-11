@@ -2,7 +2,7 @@ TheGates Docs
 =============
 
 | Welcome to TheGates documentation!
-  If you are new to the project, we recommend reading the :ref:`doc_content_intro`
+  If you are new to the project, we recommend reading the :ref:`doc_intro`
   to learn more about the idea and motivation behind building this project, as well as how everything works.
 | 
 | Want to start building your worlds? Follow the :ref:`doc_quickstart`.
@@ -46,7 +46,6 @@ Links
 
    getting-started/quickstart.rst
    getting-started/hosting.rst
-   getting-started/deploy.rst
 
 .. toctree::
    :hidden:
@@ -54,6 +53,7 @@ Links
    :caption: Reference
    :name: sec-reference
 
+   reference/gate_file.rst
    reference/command_channel.rst
 
 .. toctree::

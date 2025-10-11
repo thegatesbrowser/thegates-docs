@@ -1,4 +1,4 @@
-.. _doc_content_security:
+.. _doc_security:
 
 Security model
 ==============
@@ -8,7 +8,7 @@ Security model
   and cannot cause any harm or steal any data.
 | 
 | Our sandboxing implementation is currently under development in this branch:
-| `https://github.com/thegatesbrowser/godot/tree/chromium-sandboxing <https://github.com/thegatesbrowser/godot/tree/chromium-sandboxing>`__
+| `chromium-sandboxing <https://github.com/thegatesbrowser/godot/tree/chromium-sandboxing>`__
 | 
 | Meanwhile, all new projects hosted are monitored and checked for security.
 
@@ -17,4 +17,10 @@ Security model
 .. note::
 
   If you are familiar with C++ and wanna help, please contact us.
-  We would appreciate any help. Links are in the :ref:`community page <doc_content_community>`.
+  We would appreciate any help. Links are in the :ref:`community page <doc_community>`.
+
+See also
+--------
+
+- :ref:`doc_contribute`
+- :ref:`doc_community`

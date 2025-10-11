@@ -1,4 +1,4 @@
-.. _doc_content_community:
+.. _doc_community:
 
 Community
 ==========
@@ -10,3 +10,9 @@ Community
 | Twitter     : https://twitter.com/TheGatesBrowser
 | Email       : thegates.browser@gmail.com
 | Other links : https://lnk.bio/thegates
+
+See also
+--------
+
+- :ref:`doc_contribute`
+- :ref:`doc_faq`

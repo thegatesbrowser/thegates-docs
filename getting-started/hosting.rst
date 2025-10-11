@@ -1,118 +1,90 @@
-.. _doc_content_hosting:
+.. _doc_hosting:
 
 Hosting your projects
 =====================
 
-To host your project, first you need to make sure it's compatible with `Godot Engine 4.5`_.
+| Serve your ``.gate``, pack ``.zip/.pck``, and images over HTTPS with correct MIME types and CORS.
 
-And set rendering method as ``Forward+``.
+Essentials
+----------
 
-.. _Godot Engine 4.5: https://godotengine.org/download/
+* Files must be accessible by direct URL (no auth needed)
+* Recommend HTTPS and ``Cache-Control`` headers for static assets
+* Ensure correct content types: ``.gate`` as ``text/plain`` or ``application/toml``; ``.pck/.zip`` as ``application/octet-stream``; images as standard types
 
-Exporting
----------
+Local server (Python)
+---------------------
 
-| Then you need to create some files. Download and check out the `demo project`_ as an example.
-| 
-| 1. Export your project as a pack file **\(zip preferred\)**. See Godot documentation on `exporting packs`_.
+.. code-block:: bash
 
-.. image:: img/export_pck.png
-   :height: 350
+   python3 -m http.server 8000
+   # Open: http://localhost:8000/your_project.gate
 
-| 2. Create thumbnail image **\(png, 16:9 preferred\)**.
-| 
-| 3. Create gate file as shown below.
+Node.js (http-server)
+---------------------
 
-.. code-block:: toml
+.. code-block:: bash
 
-   # your_project.gate
-   [gate]
+   npm install -g http-server
+   http-server . -p 8000 --cors
 
-   title="Your project name"
-   description="This will be in search"
-   icon=""
-   image="path/image.png"
-   resource_pack="path/pack.zip"
-   godot_version="4.5"
+Nginx
+-----
 
-   # 'path' relative to your gate file
-   # or absolute url
+.. code-block:: nginx
 
-| After doing this, you will have 3 files: **project pack**, **thumbnail image**, **gate file**.
+   server {
+       listen 80;
+       server_name your.domain;
+       root /var/www/your_world;
 
-.. note:: 
+       location / {
+           try_files $uri =404;
+       }
 
-   | You can use `TheGates Export Plugin`_ that creates everything for you.
+       types {
+           text/plain gate;
+           application/toml toml;
+           application/octet-stream pck zip;
+       }
 
-.. _demo project: https://drive.google.com/file/d/1Vhf-NlfKl3oCEglXQRu3TP1yOdlPUMrF/view
-.. _exporting packs: https://docs.godotengine.org/en/stable/tutorials/export/exporting_pcks.html
-.. _TheGates Export Plugin: https://godotengine.org/asset-library/asset/2882
+       add_header Access-Control-Allow-Origin "*";
+       add_header Cache-Control "public, max-age=31536000";
+   }
 
-Hosting on a server
--------------------
+GitHub Pages
+------------
 
-| Now you are ready to host your project and open it in TheGates.
-| 
-| To test it locally, use `python SimpleHttpServer`_ or `Servez`_.
-| 
-| Just start your server, type the gate file URL in `TheGates app`_, and voilà.
-| Example: ``http://localhost:8000/your_project.gate``
+1. Push your static files to a repository (``/docs`` or ``gh-pages`` branch)
+2. Enable Pages in repo settings
+3. Visit ``https://<user>.github.io/<repo>/your_project.gate``
 
-.. _python SimpleHttpServer: https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
-.. _Servez: https://greggman.github.io/servez/
-.. _TheGates app: https://thegates.io/
+Cloudflare Pages
+----------------
 
-.. note::
+1. Create a new project from your repo
+2. Set build command to ``-`` (static) and output dir to the folder with your files
+3. Verify your gate URL loads publicly over HTTPS
 
-   | If you have any difficulties ask the :ref:`community <doc_content_community>`.
-   | To host on our server email us on thegates.browser@gmail.com
-   | 
-   | * Further steps are optional and not required.
-
-Linking
+Netlify
 -------
 
-To make a user follow a link to another gate, call from GDScript:
+1. Drag-and-drop your static folder or connect repo
+2. Add headers in ``_headers`` if needed:
 
-.. code-block:: python
+.. code-block:: text
 
-   if get_tree().has_method("send_command"):
-      get_tree().send_command("open_gate", ["https://example.com/project.gate"])
+   /*
+     Access-Control-Allow-Origin: *
+   
+   *.pck
+     Content-Type: application/octet-stream
+     Cache-Control: public, max-age=31536000
 
-See more in :ref:`doc_command_channel`.
+Troubleshooting
+---------------
 
-GDExtension
------------
-
-To load GDExtension shared libraries:
-
-* Copy the GDExtension file section **\[libraries\]** to the gate file.
-
-* Edit paths to match their relative URL paths.
-
-.. code-block:: toml
-
-   # your_project.gate
-   [gate]
-   title="GDExtension project"
-   description="This should work"
-   image="path/image.png"
-   resource_pack="path/pack.zip"
-
-   [libraries]
-   linux.debug.x86_64 = "path/your.so"
-   linux.release.x86_64 = "path/your.so"
-   windows.debug.x86_64 = "path/your.dll"
-   windows.release.x86_64 = "path/your.dll"
-   macos.debug = "path/your.dylib"
-   macos.release = "path/your.dylib"
-   macos.debug.arm64 = "path/your.dylib"
-   macos.release.arm64 = "path/your.dylib"
-
-   # 'path' relative to your gate file
-   # or absolute url
-
-.. warning:: 
-
-   | **Windows**, **Linux**, and **macOS** libraries required.
-   | **Debug** and **Release** are also required \(can be the same file\).
+* 404: Check file paths and case sensitivity
+* CORS: Add ``Access-Control-Allow-Origin: *`` headers
+* Wrong content type: Set explicit types for ``.gate`` and ``.pck/.zip``
+* Mixed content: Use HTTPS for all assets

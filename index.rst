@@ -2,10 +2,10 @@ TheGates Docs
 =============
 
 | Welcome to TheGates documentation!
-  If you are new to the project, we recommend reading the :ref:`doc_intro`
+  If you are new to the project, we recommend reading the :doc:`/about/introduction`
   to learn more about the idea and motivation behind building this project, as well as how everything works.
 | 
-| Want to start building your worlds? Follow the :ref:`doc_quickstart`.
+| Want to start building your worlds? Follow the :doc:`/getting-started/quickstart`.
 
 .. note::
 

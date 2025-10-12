@@ -25,5 +25,5 @@ Get connected
 Start here
 ----------
 
-* Build your first world with :ref:`doc_quickstart`.
-* Read :ref:`doc_security` if you want to help with sandboxing.
+* Build your first world with :doc:`/getting-started/quickstart`.
+* Read :doc:`/about/security` if you want to help with sandboxing.

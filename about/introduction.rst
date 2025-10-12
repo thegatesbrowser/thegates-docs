@@ -69,6 +69,6 @@ Godot uses scenes to describe objects and GDScript to make them behave, so:
 Read more
 ---------
 
-* :ref:`doc_security`
-* :ref:`doc_faq`
-* :ref:`doc_contribute`
+* :doc:`/about/security`
+* :doc:`/about/faq`
+* :doc:`/community/contribute`

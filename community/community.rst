@@ -14,5 +14,5 @@ Community
 See also
 --------
 
-- :ref:`doc_contribute`
-- :ref:`doc_faq`
+- :doc:`/community/contribute`
+- :doc:`/about/faq`

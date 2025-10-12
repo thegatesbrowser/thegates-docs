@@ -17,10 +17,10 @@ Security model
 .. note::
 
   If you are familiar with C++ and wanna help, please contact us.
-  We would appreciate any help. Links are in the :ref:`community page <doc_community>`.
+  We would appreciate any help. Links are in the :doc:`community page </community/community>`.
 
 See also
 --------
 
-- :ref:`doc_contribute`
-- :ref:`doc_community`
+- :doc:`/community/contribute`
+- :doc:`/community/community`

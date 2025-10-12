@@ -13,12 +13,12 @@ What do I need to build a world?
 
 * `Godot 4.5 <https://godotengine.org/download/>`__
 * Rendering method set to ``Forward+``
-* A ``.gate`` file that references your exported pack and images (see :ref:`doc_quickstart`)
+* A ``.gate`` file that references your exported pack and images (see :doc:`/getting-started/quickstart`)
 
 How do I host and test locally?
 -------------------------------
 
-| Run a local HTTP server in your project folder and open your ``.gate`` URL in TheGates app. See :ref:`doc_quickstart`.
+| Run a local HTTP server in your project folder and open your ``.gate`` URL in TheGates app. See :doc:`/getting-started/quickstart`.
 
 Which platforms does TheGates support?
 --------------------------------------
@@ -38,19 +38,19 @@ Is it open-source?
 Is it safe to run third-party worlds?
 -------------------------------------
 
-| Sandboxing is under active development (see :ref:`doc_security`). In the meantime, new hosted projects are monitored and reviewed.
+| Sandboxing is under active development (see :doc:`/about/security`). In the meantime, new hosted projects are monitored and reviewed.
 
 Can I link to other worlds from my game?
 ----------------------------------------
 
-| Yes. Use the engine command from GDScript (see example in :ref:`doc_quickstart`).
+| Yes. Use the engine command from GDScript (see example in :doc:`/getting-started/quickstart`).
 
 Can I use GDExtension/native libraries?
 ---------------------------------------
 
-| Yes. Provide platform builds in the ``[libraries]`` section of your ``.gate`` file. See :ref:`doc_quickstart` for the exact format and requirements.
+| Yes. Provide platform builds in the ``[libraries]`` section of your ``.gate`` file. See :doc:`/getting-started/quickstart` for the exact format and requirements.
 
 Where can I get help?
 ---------------------
 
-| Join our :ref:`doc_community` (Discord, social, email), or open an issue on GitHub.
+| Join our :doc:`/community/community` (Discord, social, email), or open an issue on GitHub.

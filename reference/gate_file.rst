@@ -97,5 +97,5 @@ Example
 See also
 --------
 
-* :ref:`doc_quickstart`
-* :ref:`doc_command_channel`
+* :doc:`/getting-started/quickstart`
+* :doc:`/reference/command_channel`

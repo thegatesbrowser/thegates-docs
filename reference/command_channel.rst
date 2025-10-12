@@ -82,5 +82,5 @@ Notes
 See also
 --------
 
-* :ref:`doc_quickstart`
-* :ref:`doc_community`
+* :doc:`/getting-started/quickstart`
+* :doc:`/community/community`

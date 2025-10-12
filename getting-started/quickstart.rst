@@ -3,7 +3,7 @@
 Quickstart
 ==========
 
-| Export your Godot 4.5 project for TheGates: pack + ``.gate``, test locally, link worlds, optional GDExtension. Hosting: :ref:`doc_hosting`.
+| Export your Godot project or create a new one for TheGates.
 
 Prerequisites
 -------------
@@ -14,7 +14,7 @@ Prerequisites
 Start from the template
 -----------------------
 
-| Use the official multiplayer starter project with VOIP:
+| If you are starting from scratch, use the official multiplayer starter project with VOIP:
 
 * GitHub: `thegatesbrowser/godot-multiplayer <https://github.com/thegatesbrowser/godot-multiplayer>`__
 
@@ -41,7 +41,7 @@ Exporting
 .. image:: img/export_pck.png
    :height: 350
 
-| 2. Create thumbnail image **(png, 16:9 preferred)**.
+| 2. Create an icon and a thumbnail image.
 | 
 | 3. Create gate file as shown below.
 
@@ -52,15 +52,14 @@ Exporting
 
    title="Your project name"
    description="This will be in search"
-   icon=""
+   icon="path_to/icon.png"
    image="path_to/image.png"
    resource_pack="path_to/pack.zip"
    godot_version="4.5"
 
-   # 'path' relative to your gate file
-   # or absolute url
+   # file paths are relative to the .gate file unless absolute
 
-| After doing this, you will have 3 files: **project pack**, **thumbnail image**, **gate file**.
+| After doing this, you will have 4 files: **project pack**, **icon**, **thumbnail image**, **gate file**.
 
 .. note:: 
 
@@ -86,7 +85,7 @@ Test locally
 .. _Servez: https://greggman.github.io/servez/
 .. _TheGates app: https://thegates.io/
 
-Link to other worlds
+Link to other worlds (optional)
 --------------------
 
 | To make a user follow a link to another gate, call from GDScript:
@@ -96,7 +95,7 @@ Link to other worlds
    if get_tree().has_method("send_command"):
       get_tree().send_command("open_gate", ["https://example.com/project.gate"])
 
-| See more in :ref:`doc_command_channel`.
+| See more in :doc:`/reference/command_channel`.
 
 GDExtension (optional)
 ----------------------
@@ -128,8 +127,7 @@ GDExtension (optional)
    macos.debug.arm64 = "path_to/yourlib.dylib"
    macos.release.arm64 = "path_to/yourlib.dylib"
 
-   # 'path' relative to your gate file
-   # or absolute url
+   # file paths are relative to the .gate file unless absolute
 
 .. warning:: 
 
@@ -139,6 +137,6 @@ GDExtension (optional)
 Next steps
 ----------
 
-* Deploy to the web: :ref:`doc_hosting`.
-* Use engine commands: :ref:`doc_command_channel`.
-* Join the :ref:`doc_community` for help and feedback.
+* Deploy to the web: :doc:`/getting-started/hosting`.
+* Use engine commands: :doc:`/reference/command_channel`.
+* Join the :doc:`/community/community` for help and feedback.

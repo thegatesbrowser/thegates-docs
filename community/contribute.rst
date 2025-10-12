@@ -3,15 +3,16 @@
 Contributing and Joining
 ========================
 
-| Make an impact by helping shape the future of the 3D Internet.
+| Join us in building the future of the 3D Internet.
 
 How you can contribute
 ----------------------
 
-* Engine/Runtime: sandboxing, search for 3D worlds, WebAssembly in Godot, cross‑platform input
-* World building: create gates and interactive experiences for learning, art, music, and games
-* Product & UX: UI/UX improvements, documentation, examples, onboarding
-* Community: marketing, outreach, tutorials, demo content
+| Help with tackling exciting challenges — from implementing sandboxing and building new search algorithms
+  for 3D worlds, to bringing WebAssembly to Godot and solving cross-platform input problems.
+| 
+| Create digital worlds, educational platforms, improve UI/UX, make tutorials, demo content, or contribute to marketing and outreach.
+
 
 Get connected
 -------------

@@ -25,7 +25,7 @@ Links
 -----
 
 * Website: `thegates.io <https://thegates.io>`__
-* GitHub: `github.com/thegatesbrowser <https://github.com/thegatesbrowser>`__
+* GitHub: `thegatesbrowser <https://github.com/thegatesbrowser>`__
 * Demo video: `YouTube <https://youtu.be/FU4MTPEdqwU?si=dNm3yFojDD1Ga08m>`__
 
 .. toctree::

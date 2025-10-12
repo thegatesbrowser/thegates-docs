@@ -141,5 +141,4 @@ Next steps
 
 * Deploy to the web: :ref:`doc_hosting`.
 * Use engine commands: :ref:`doc_command_channel`.
-* Learn the model: :ref:`doc_intro`.
-* Join the :ref:`doc_community` for help and feedback`.
+* Join the :ref:`doc_community` for help and feedback.

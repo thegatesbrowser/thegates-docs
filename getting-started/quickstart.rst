@@ -3,7 +3,7 @@
 Quickstart
 ==========
 
-| Export your Godot project or create a new one for TheGates.
+| Follow this guide to publish your first project to TheGates.
 
 Prerequisites
 -------------
@@ -86,7 +86,7 @@ Test locally
 .. _TheGates app: https://thegates.io/
 
 Link to other worlds (optional)
---------------------
+-------------------------------
 
 | To make a user follow a link to another gate, call from GDScript:
 

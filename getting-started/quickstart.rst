@@ -11,10 +11,11 @@ Prerequisites
 * Install `Godot Engine 4.5 <https://godotengine.org/download/>`__.
 * In your project, set the rendering method to ``Forward+``.
 
-Start from the template
------------------------
+Start from the template (optional)
+----------------------------------
 
-| If you are starting from scratch, use the official multiplayer starter project with VOIP:
+| Already have a Godot 4.5 project? Open it in Godot 4.5 and skip this section.
+  If you're starting from scratch, use the official multiplayer starter project with VOIP:
 
 * GitHub: `thegatesbrowser/godot-multiplayer <https://github.com/thegatesbrowser/godot-multiplayer>`__
 

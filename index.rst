@@ -45,8 +45,8 @@ Links
    :name: sec-getting-started
 
    getting-started/quickstart.rst
-   getting-started/optional.rst
    getting-started/hosting.rst
+   getting-started/optional.rst
 
 .. toctree::
    :hidden:

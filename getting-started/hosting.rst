@@ -3,7 +3,7 @@
 Hosting your projects
 =====================
 
-| Serve your ``.gate``, pack ``.zip/.pck``, and images over HTTPS with correct MIME types and CORS.
+| Serve your ``.gate``, pack ``.zip/.pck``, and images over HTTPS.
 
 Essentials
 ----------

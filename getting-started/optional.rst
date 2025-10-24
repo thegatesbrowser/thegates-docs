@@ -6,7 +6,7 @@ Optional steps
 Link to other worlds
 --------------------
 
-| To make a user follow a link to another gate, call from GDScript:
+| To make a user follow a link to another gate (e.g., when they enter a portal), call from GDScript:
 
 .. code-block:: python
 
@@ -18,7 +18,8 @@ Link to other worlds
 GDExtension
 -----------
 
-| To load GDExtension shared libraries:
+| If you use addons with GDExtension in your project,
+  you can edit your gate file to load the libraries (this feature is coming to export plugin soon).
 
 * Copy the GDExtension file section **[libraries]** to the gate file.
 
@@ -52,10 +53,11 @@ GDExtension
    | **Windows**, **Linux**, and **macOS** libraries required.
    | **Debug** and **Release** are also required (can be the same file).
 
+| See more in :doc:`/reference/gate_file`.
 
 Next steps
 ----------
 
-* :doc:`/getting-started/hosting` in your server.
+* :doc:`/getting-started/hosting` in your own server.
 * Check out :doc:`/reference/command_channel`.
 * Join the :doc:`/community/community` for help and feedback.

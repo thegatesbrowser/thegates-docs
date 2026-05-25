@@ -3,8 +3,11 @@
 Hosting your projects
 =====================
 
-| This guide covers how to export your project and serve exported files over HTTP
-  using widely-used web server software Nginx.
+| A gate is a few static files: a ``.gate`` manifest, a ``.pck`` or
+  ``.zip`` resource pack, and a couple of images. Any HTTP server can
+  serve them. This guide shows the simplest reliable path: a Linux VPS
+  running Caddy, which is a single-binary web server with automatic
+  HTTPS and a three-line config.
 
 Export locally from the plugin
 ------------------------------
@@ -18,154 +21,123 @@ Export locally from the plugin
 
 | *Plugin preview when exporting to a local folder*
 
-Make a note of the export output directory on your machine. You will
-upload its contents to your server in a later step.
+Make a note of the export output directory. You will upload its contents
+to your server in a later step.
 
 
-Get a server and connect via SSH (very short)
---------------------------------------------
+Get a server
+------------
 
-- You can use any VPS provider (for example: `DigitalOcean Droplets
+You can follow this guide two ways. With a domain you get HTTPS and a
+shareable URL; with just the server's IP you can test in a few minutes
+without buying anything.
+
+**With a domain (recommended)**
+
+- Rent a VPS, for example `DigitalOcean Droplets
   <https://docs.digitalocean.com/products/droplets/how-to/create/>`__,
-  `Hetzner Cloud <https://docs.hetzner.com/cloud/>`__,
-  `AWS Lightsail <https://lightsail.aws.amazon.com/>`__).
-- Learn SSH basics if needed: `SSH tutorial
-  <https://www.ssh.com/academy/ssh/command>`__.
-
-Once the server is created, connect to it from your terminal:
+  `Hetzner Cloud <https://docs.hetzner.com/cloud/>`__, or `AWS Lightsail
+  <https://lightsail.aws.amazon.com/>`__.
+- Point a DNS ``A`` record from your domain at the server's IP. Your
+  registrar's docs cover this; here is a `generic overview
+  <https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/>`__.
+- SSH into the server:
 
 .. code-block:: bash
 
   ssh username@your_server_ip
 
-Replace ``username`` and ``your_server_ip`` with your server's values.
+**IP only (quick test)**
+
+- Rent a VPS as above; skip the domain.
+- SSH in with the same command. You will serve over plain ``http://``
+  for testing.
 
 
-Install Nginx
+Install Caddy
 -------------
 
-You can install Nginx on various operating systems. Here's how to install it on Ubuntu:
+The official `Caddy install instructions
+<https://caddyserver.com/docs/install>`__ cover every distribution. On
+Debian / Ubuntu:
 
 .. code-block:: bash
 
+  sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
   sudo apt update
-  sudo apt install -y nginx
+  sudo apt install -y caddy
 
-Enable and start the service:
-
-.. code-block:: bash
-
-  sudo systemctl enable nginx
-  sudo systemctl start nginx
-
-If a firewall is enabled, allow HTTP (and HTTPS if you later add TLS):
-
-.. code-block:: bash
-
-  # Ubuntu/Debian with ufw
-  sudo ufw allow 'Nginx Full' || sudo ufw allow 80
+Caddy starts as a systemd service automatically; nothing else to run.
 
 
-Upload your exported files to the server
----------------------------------------
+Upload your exported folder
+---------------------------
 
-Create a directory to host your game files (adjust path as desired):
+Create a directory for the gate on the server, then upload the export
+from your local machine:
 
 .. code-block:: bash
 
-  sudo mkdir -p /var/www/thegates/my-game
-  sudo chown -R "$USER":"$USER" /var/www/thegates/my-game
-
-From your local machine (where you exported), upload the contents of
-the export folder to the server path above. You can use ``scp`` or
-``rsync`` for this:
-
-.. code-block:: bash
+  # On the server:
+  sudo mkdir -p /var/www/mygate
+  sudo chown -R "$USER":"$USER" /var/www/mygate
 
   # From your local machine
-  # Replace /path/to/exported_folder with the folder created by the plugin
-  scp -r /path/to/exported_folder/* username@your_server_ip:/var/www/thegates/my-game/
+  # (replace /path/to/exported with the plugin output folder):
+  rsync -avz /path/to/exported/ username@your_server_ip:/var/www/mygate/
 
-  # Or with rsync (resumes and only copies changes)
-  rsync -avz /path/to/exported_folder/ username@your_server_ip:/var/www/thegates/my-game/
+| ``scp -r`` works too if you do not have ``rsync`` installed.
+  Re-running the same ``rsync`` command later is how you publish
+  updates.
 
 
-Configure Nginx to serve the files
-----------------------------------
+Tell Caddy to serve it
+----------------------
 
-Create a new Nginx server block. On Debian/Ubuntu, place it in
-``/etc/nginx/sites-available/thegates.conf`` and symlink to
-``sites-enabled``. On other distros, use ``/etc/nginx/conf.d/thegates.conf``.
+Edit ``/etc/caddy/Caddyfile``:
 
 .. code-block:: bash
 
-  # Debian/Ubuntu style
-  sudo nano /etc/nginx/sites-available/thegates.conf
+  sudo nano /etc/caddy/Caddyfile
 
-Example configuration suitable for TheGates exports:
+**With a domain:**
 
-.. code-block:: nginx
+.. code-block:: caddyfile
 
-  server {
-      listen 80;
-      # Replace with your domain or keep _ for any host
-      server_name _;
-
-      # Path to the uploaded export files
-      root /var/www/thegates/my-game;
-      index index.html;
-
-      # Serve files if present, otherwise 404
-      location / {
-          try_files $uri $uri/ =404;
-      }
-
-      # Ensure correct MIME types for Godot/WebAssembly assets
-      types {
-          application/wasm  wasm;
-          application/octet-stream  pck;
-      }
-
-      # Cache immutable static assets aggressively
-      location ~* \.(?:wasm|pck|js|mjs|css|png|jpg|jpeg|webp|svg|gif|ico|ttf|otf|woff|woff2|mp3|ogg|mp4)$ {
-          access_log off;
-          add_header Cache-Control "public, max-age=31536000, immutable";
-      }
-
-      # Keep HTML relatively fresh (don't cache for long)
-      location = /index.html {
-          add_header Cache-Control "no-cache";
-      }
+  yourdomain.com {
+      root * /var/www/mygate
+      file_server
   }
 
-If you used the Debian/Ubuntu layout, enable the site and test:
+**IP only:**
+
+.. code-block:: caddyfile
+
+  :80 {
+      root * /var/www/mygate
+      file_server
+  }
+
+Reload Caddy:
 
 .. code-block:: bash
 
-  sudo ln -s /etc/nginx/sites-available/thegates.conf /etc/nginx/sites-enabled/thegates.conf
-  sudo nginx -t
-  sudo systemctl reload nginx
+  sudo systemctl reload caddy
 
-For distros using ``conf.d``:
-
-.. code-block:: bash
-
-  sudo nginx -t
-  sudo systemctl reload nginx
+| For the domain variant, Caddy provisions a Let's Encrypt certificate
+  the first time someone visits — HTTPS just works. Full reference: the
+  `Caddyfile documentation <https://caddyserver.com/docs/caddyfile>`__.
 
 
-Verify in the browser
----------------------
+Open in TheGates
+----------------
 
-Open ``http://your_domain`` or ``http://your_server_ip`` in your
-browser. You should see the exported TheGates page load and assets
-download correctly (including ``.wasm`` and ``.pck`` files).
+Paste the gate URL into the TheGates app:
 
+- ``https://yourdomain.com/yourproject.gate`` (with domain)
+- ``http://your_server_ip/yourproject.gate`` (IP only)
 
-Next steps (optional)
----------------------
-
-- Add HTTPS with Let's Encrypt: `Certbot Nginx guide
-  <https://certbot.eff.org/instructions>`__.
-- Set a custom domain and DNS A record with your provider.
-- Automate uploads with CI and ``rsync``.
+| Replace ``yourproject.gate`` with the filename produced by the
+  plugin.

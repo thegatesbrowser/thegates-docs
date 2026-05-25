@@ -1,7 +1,7 @@
 TheGates Docs
 =============
 
-| A web browser for Godot worlds.
+| A web browser for 3D worlds.
 | Open worlds by URL the way you open webpages.
 
 .. image:: /_static/welcome_hub.png

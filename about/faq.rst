@@ -38,7 +38,9 @@ Is it open-source?
 Is it safe to run third-party worlds?
 -------------------------------------
 
-| Sandboxing is under active development (see :doc:`/about/security`). In the meantime, new hosted projects are monitored and reviewed.
+| v1.0 ships cross-platform sandboxing. Each gate runs in a separate, locked-down process using code derived from Chromium's sandbox — the same isolation Chrome uses for browser tabs. See :doc:`/security/overview`.
+|
+| Treat gates the same way you'd treat unknown websites: trusted to the extent you trust the publisher.
 
 Can I link to other worlds from my game?
 ----------------------------------------

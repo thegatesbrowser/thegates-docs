@@ -11,8 +11,8 @@ project = "TheGates"
 copyright = "2023-present Nordup and TheGates community.\nIncludes Godot Docs theme assets by the Godot Engine Documentation contributors"
 author = "Nordup"
 
-release = "(latest)"
-version = "0.23.0"
+release = "1.0.0"
+version = "1.0.0"
 
 # -- General configuration ------------------------------------------------
 

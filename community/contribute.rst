@@ -8,9 +8,10 @@ Contributing and Joining
 How you can contribute
 ----------------------
 
-| Help with tackling exciting challenges — from implementing sandboxing and building new search algorithms
-  for 3D worlds, to bringing WebAssembly to Godot and solving cross-platform input problems.
-| 
+| Help with tackling exciting challenges — from strengthening our sandbox further and building new search
+  algorithms for 3D worlds, to bringing WebAssembly to Godot, adding WebRTC support, and solving
+  cross-platform input problems.
+|
 | Create digital worlds, educational platforms, improve UI/UX, make tutorials, demo content, or contribute to marketing and outreach.
 
 
@@ -26,4 +27,4 @@ Start here
 ----------
 
 * Build your first world with :doc:`/getting-started/quickstart`.
-* Read :doc:`/about/security` if you want to help with sandboxing.
+* Read :doc:`/security/overview` if you want to help harden the sandbox further.

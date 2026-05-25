@@ -35,7 +35,6 @@ Links
    :name: sec-general
 
    about/introduction.rst
-   about/security.rst
    about/faq.rst
 
 .. toctree::
@@ -47,6 +46,18 @@ Links
    getting-started/quickstart.rst
    getting-started/hosting.rst
    getting-started/optional.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Security
+   :name: sec-security
+
+   security/overview.rst
+   security/per_gate_isolation.rst
+   security/network_policy.rst
+   security/wayland_and_x11.rst
+   security/verify_the_sandbox.rst
 
 .. toctree::
    :hidden:

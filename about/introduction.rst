@@ -16,6 +16,12 @@ What is TheGates?
 | **TheGates** is a new web ecosystem focused on building communities, exploring worlds and gaming with friends.
   Instead of webpages it consists of 3D experiences build with `Godot Engine <https://godotengine.org/>`__.
 
+Safe by design
+--------------
+
+| Every gate runs in an OS-level sandbox. Your filesystem, your home network, and your other gates are
+  isolated from anything a gate's code might do. See :doc:`/security/overview`.
+
 3D Internet
 -----------
 
@@ -69,6 +75,6 @@ Godot uses scenes to describe objects and GDScript to make them behave, so:
 Read more
 ---------
 
-* :doc:`/about/security`
+* :doc:`/security/overview`
 * :doc:`/about/faq`
 * :doc:`/community/contribute`

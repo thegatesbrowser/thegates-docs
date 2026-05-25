@@ -5,7 +5,7 @@ Troubleshooting
 
 | Things that commonly go wrong and what to try. If your issue isn't
   listed here, ask on
-  `Discord <https://discord.com/invite/JwpScU8xm6>`__ — most weekdays
+  `Discord <https://discord.com/invite/JwpScU8xm6>`__. Most weekdays
   you'll get a reply within an hour.
 
 
@@ -30,7 +30,7 @@ Gate URL doesn't open in TheGates
 |
 | - Check the URL points directly at a ``.gate`` file, not at a
     project's home page.
-| - Open the URL in any web browser — if it doesn't load, the gate
+| - Open the URL in any web browser. If it doesn't load, the gate
     isn't reachable. Your hosting may be down or the path is wrong.
 | - If the URL works in a browser but not in TheGates, the ``.gate``
     manifest may be malformed. See :doc:`/reference/gate_file` for
@@ -80,7 +80,7 @@ Gate works locally but not when published
 |
 | - Check that all asset URLs in your ``.gate`` are relative paths,
     not absolute paths to ``localhost``.
-| - Confirm your hosting serves the files correctly — most static
+| - Confirm your hosting serves the files correctly. Most static
     hosts handle this automatically.
 | - Open the gate URL directly in a web browser to confirm everything
     is reachable.
@@ -94,9 +94,9 @@ Renderer feels slow or laggy
 | **Try:**
 |
 | - The first visit to a gate downloads the renderer binary if the
-    user doesn't have it cached — that's a one-time cost. Repeat
+    user doesn't have it cached. That's a one-time cost. Repeat
     visits should be fast.
-| - Check your world's render settings — *Forward+* at very high
+| - Check your world's render settings. *Forward+* at very high
     settings can be heavier than necessary for simpler scenes.
 | - Open the launcher's debug log (``F12``) and look at the boot-time
     logs to see where time is being spent.
@@ -105,4 +105,4 @@ Renderer feels slow or laggy
 See also
 --------
 
-- :doc:`/community/community` — get help from the community.
+- :doc:`/community/community`

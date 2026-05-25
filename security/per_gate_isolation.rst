@@ -18,12 +18,12 @@ Gates can't see each other
 |
 | Each gate gets:
 |
-| - **Its own per-gate folder** — saved data is namespaced under the
+| - **Its own per-gate folder.** Saved data is namespaced under the
     gate's URL. One gate's folder is invisible to another gate.
-| - **Its own sandbox identity** — a separate AppContainer profile on
+| - **Its own sandbox identity.** A separate AppContainer profile on
     Windows, a separate Seatbelt profile on macOS, a separate
     Landlock ruleset on Linux.
-| - **Its own IPC channels** — the inter-process channels between
+| - **Its own IPC channels.** The inter-process channels between
     each gate and the launcher are per-gate. A gate cannot connect
     to another gate's channels.
 
@@ -31,7 +31,7 @@ Gates can't see each other
 What's not isolated
 -------------------
 
-| The launcher process is shared — it routes your input, manages the
+| The launcher process is shared. It routes your input, manages the
   desktop window, and brokers all network traffic. The launcher is
   the trusted side of the boundary; everything inside a gate is
   treated as untrusted.

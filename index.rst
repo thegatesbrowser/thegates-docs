@@ -5,7 +5,7 @@ TheGates Docs
 | Open worlds by URL the way you open webpages.
 
 .. image:: /_static/welcome_hub.png
-   :alt: Inside the Welcome hub world — a 3D space with a
+   :alt: Inside the Welcome hub world. A 3D space with a
          robot character, a glowing portal, and the "TheGates"
          sign in the sky.
    :class: home-pic-left

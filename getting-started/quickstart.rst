@@ -40,7 +40,7 @@ Stuck?
 ------
 
 | If the export fails or the URL doesn't open in TheGates, ask on
-  `Discord <https://discord.com/invite/JwpScU8xm6>`__ — most weekdays
+  `Discord <https://discord.com/invite/JwpScU8xm6>`__. Most weekdays
   you'll get a reply within an hour.
 
 

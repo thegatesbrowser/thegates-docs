@@ -33,8 +33,8 @@ Built on Chromium
 -----------------
 
 | TheGates doesn't roll its own sandbox. Each gate runs in code
-  derived from `Chromium's sandbox`_ — the same isolation Chrome uses
-  for browser tabs.
+  derived from `Chromium's sandbox`_. It's the same isolation Chrome
+  uses for browser tabs.
 |
 | On macOS we also borrow pieces from Firefox's sandbox, which is
   itself derived from Chromium.
@@ -49,7 +49,7 @@ Three platforms, one sandbox
 
    .. tab:: Windows
 
-      | Each gate runs inside a Windows **AppContainer** — an isolated
+      | Each gate runs inside a Windows **AppContainer**: an isolated
         security context with a restricted access token and the
         lowest possible integrity level.
       |
@@ -83,8 +83,8 @@ What gates can't reach
 | Gates can't talk to your home router, your printer, or services
   running on your own machine. The launcher process owns all network
   connections. Before opening a socket for a gate, the broker checks
-  the destination — public addresses on the open internet are allowed,
-  private IP ranges and loopback are denied.
+  the destination. Public addresses on the open internet are allowed.
+  Private IP ranges and loopback are denied.
 
 .. seealso::
 

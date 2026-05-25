@@ -5,8 +5,8 @@ Linking to other gates
 
 | One of the most powerful patterns in TheGates is portals between
   gates. From inside a world, you can ask the browser to navigate to
-  another gate URL — the equivalent of an ``<a href>`` link on a
-  webpage, but triggered from GDScript.
+  another gate URL. It's the equivalent of an ``<a href>`` link on
+  a webpage, but triggered from GDScript.
 
 
 The basic call
@@ -19,7 +19,7 @@ The basic call
    if get_tree().has_method("send_command"):
        get_tree().send_command("open_gate", ["https://example.com/world.gate"])
 
-| The ``has_method`` guard makes your gate forward-compatible — if
+| The ``has_method`` guard makes your gate forward-compatible. If
   the browser ever changes the command channel API, older gates still
   work without crashing.
 |
@@ -66,12 +66,12 @@ Portal UX tips
     the player away mid-game is frustrating. Consider a "Press F to
     enter" prompt.
 | - **Indicate the destination.** Show the title or preview of the
-    target gate before transition — the same way a hyperlink shows
+    target gate before transition, the same way a hyperlink shows
     its URL on hover.
 
 
 See also
 --------
 
-- :doc:`/reference/command_channel` — the full command channel API.
-- :doc:`/reference/gate_file` — the manifest spec.
+- :doc:`/reference/command_channel`
+- :doc:`/reference/gate_file`

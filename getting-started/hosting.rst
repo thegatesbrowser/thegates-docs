@@ -4,7 +4,7 @@ Hosting your projects
 =====================
 
 | Skip this page if "Publish to TheGates" in the :doc:`quickstart` is
-  enough — your project is already hosted. The rest is for people who
+  enough. Your project is already hosted. The rest is for people who
   want to serve the files themselves.
 
 
@@ -35,14 +35,14 @@ Serve the folder
 ----------------
 
 Easiest path: any static-file host. **Cloudflare Pages** or **Netlify**
-are the simplest — free, fast, drag-and-drop the export folder.
+are the simplest: free, fast, drag-and-drop the export folder.
 **GitHub Pages** works if you already have a repo.
 
 For deeper control: your own server (Nginx, Caddy, Apache), or object
-storage with a public bucket (S3, R2, B2). Same gate either way — the
+storage with a public bucket (S3, R2, B2). Same gate either way. The
 launcher uses standard HTTP.
 
-The launcher is a desktop app, not a web browser — there are no CORS
+The launcher is a desktop app, not a web browser, so there are no CORS
 requirements, no special headers, and no MIME-type configuration. It
 uses standard HTTP caching (``ETag`` / ``If-Modified-Since``), so any
 sensible host handles re-downloads efficiently.

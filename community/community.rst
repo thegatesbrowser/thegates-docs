@@ -6,13 +6,13 @@ Community
 | The project is small and the community helps each other directly.
   Pick whichever channel fits:
 |
-| - **Quick question, bug, or stuck on a gate?** — Discord is fastest.
+| - **Quick question, bug, or stuck on a gate?** Discord is fastest.
     Most weekdays you'll get a reply within an hour.
-| - **Found a bug worth tracking?** — Open an issue on GitHub so it
+| - **Found a bug worth tracking?** Open an issue on GitHub so it
     doesn't get lost.
-| - **Need to reach the maintainers directly?** — Email
+| - **Need to reach the maintainers directly?** Email
     ``thegates.browser@gmail.com``.
-| - **Want to follow what we ship?** — Twitter, or our
+| - **Want to follow what we ship?** Twitter, or our
     `link tree <https://lnk.bio/thegates>`__.
 
 

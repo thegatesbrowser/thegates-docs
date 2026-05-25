@@ -5,7 +5,7 @@ Native libraries (GDExtension)
 
 | If your gate uses Godot's GDExtension to load native libraries, you
   need to declare them in your ``.gate`` file. The export plugin
-  doesn't auto-detect these yet — you'll need to edit the manifest
+  doesn't auto-detect these yet, so you'll need to edit the manifest
   manually.
 
 * Copy the GDExtension file section **[libraries]** to the gate file.

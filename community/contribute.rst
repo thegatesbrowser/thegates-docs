@@ -23,11 +23,11 @@ How you can contribute
 |
 | **Help with engine work.** If you write C++ or know Godot's internals,
   there's plenty in the engine fork worth contributing to. Come say hi
-  in Discord first — the codebase is a fork of Godot 4.5 and easier to
+  in Discord first. The codebase is a fork of Godot 4.5 and easier to
   navigate with a guide.
 |
 | **Be part of the community.** Hang out on Discord, share your worlds,
-  give feedback on what's broken. The project is small — active
+  give feedback on what's broken. The project is small. Active
   community members shape the direction more than they expect to.
 
 

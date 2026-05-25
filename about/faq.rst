@@ -16,7 +16,7 @@ Is this a metaverse?
 | Not exactly.
 |
 | TheGates treats the internet as a network of 3D worlds you open
-  by URL — closer to the web browser model than to a single
+  by URL, closer to the web browser model than to a single
   centralized platform.
 
 
@@ -35,7 +35,7 @@ Where can I find worlds to visit?
 
 | The launcher home screen includes featured gates and a search bar.
 |
-| One of the featured gates is **Welcome** — a 3D hub world with
+| One of the featured gates is **Welcome**, a 3D hub world with
   portals to other gates.
 |
 | You can also paste a direct gate URL from a friend or website.

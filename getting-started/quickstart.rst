@@ -3,8 +3,9 @@
 Quickstart
 ==========
 
-| Follow this simple steps to publish your first project to TheGates.
-  Or see the `video guide <https://www.youtube.com/watch?v=mBmzvQNlkfs>`__.
+| Ship your first gate to TheGates in about five minutes. Follow these
+  steps, or watch the
+  `video guide <https://www.youtube.com/watch?v=mBmzvQNlkfs>`__.
 
 .. note::
 
@@ -34,6 +35,14 @@ Publish to TheGates
 | *\*Plugin preview after publishing and filling the fields*
 
 .. _TheGates app: https://thegates.io/
+
+Stuck?
+------
+
+| If the export fails or the URL doesn't open in TheGates, ask on
+  `Discord <https://discord.com/invite/JwpScU8xm6>`__ — most weekdays
+  you'll get a reply within an hour.
+
 
 Next steps
 ----------

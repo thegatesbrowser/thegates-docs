@@ -34,10 +34,13 @@ You get a folder containing:
 Serve the folder
 ----------------
 
-Anything that serves static files over HTTP or HTTPS works: your own
-server (Nginx, Caddy, Apache), a static host (Cloudflare Pages,
-Netlify, Vercel, GitHub Pages), or object storage with a public bucket
-(S3, R2, B2).
+Easiest path: any static-file host. **Cloudflare Pages** or **Netlify**
+are the simplest — free, fast, drag-and-drop the export folder.
+**GitHub Pages** works if you already have a repo.
+
+For deeper control: your own server (Nginx, Caddy, Apache), or object
+storage with a public bucket (S3, R2, B2). Same gate either way — the
+launcher uses standard HTTP.
 
 The launcher is a desktop app, not a web browser — there are no CORS
 requirements, no special headers, and no MIME-type configuration. It

@@ -1,7 +1,11 @@
 .. _doc_optional:
 
-Optional steps
-==============
+Going further
+=============
+
+| Two extras once you've shipped your first gate: linking to other gates
+  from your world, and bundling native libraries with GDExtension.
+
 
 Link to other worlds
 --------------------

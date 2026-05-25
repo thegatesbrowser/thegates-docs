@@ -1,23 +1,57 @@
 TheGates Docs
 =============
 
-| Welcome to TheGates documentation!
-  If you are new to the project, we recommend reading the :doc:`/about/introduction`
-  to learn more about the idea and motivation behind building this project, as well as how everything works.
-| 
-| Want to start building your worlds? Follow the :doc:`/getting-started/quickstart`.
+| **A web browser for 3D worlds.**
+| Visit Godot-built worlds via URL. No installs, no accounts, sandboxed by default.
 
-.. note::
+----
 
-  The table of contents in the sidebar should let you easily access the documentation for your topic of interest.
-  You can also use the search function in the top-left corner.
+Choose your path
+----------------
+
+Explore worlds
+~~~~~~~~~~~~~~
+
+| Download TheGates from `thegates.io <https://thegates.io>`__, paste any
+  gate URL into the address bar, and walk in.
+
+* :doc:`What is TheGates? </about/introduction>`
+* :doc:`Frequently asked questions </about/faq>`
+
+Build a gate
+~~~~~~~~~~~~
+
+| If you know `Godot Engine <https://godotengine.org>`__, you can publish a
+  gate in five minutes.
+
+* :doc:`Quickstart </getting-started/quickstart>` — your first gate, end-to-end
+* :doc:`How it works </concepts/how-it-works>` — the two-process model in plain language
+* :doc:`Why TheGates? </concepts/why-thegates>` — the worldview behind it
+
+Contribute to the engine
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+| TheGates is open source. Help shape the 3D internet.
+
+* :doc:`How to contribute </community/contribute>`
+* `Source code on GitHub <https://github.com/thegatesbrowser>`__
+
+----
+
+What's new in v1.0
+------------------
+
+| Cross-platform sandboxing — every gate runs locked down on Windows,
+  Linux, and macOS. :doc:`Read the sandboxing overview </security/overview>`.
+
+----
 
 Get involved
 ------------
 
 | If you don't understand something or cannot find what you are looking for,
   help us improve the documentation by letting us know. Fix mistakes, add examples, or suggest edits, every contribution helps.
-| 
+|
 | Submit an issue or pull request on the `GitHub repository <https://github.com/thegatesbrowser/thegates-docs>`__
   or talk to us on the `Discord server <https://discord.com/invite/JwpScU8xm6>`__.
 
@@ -40,7 +74,16 @@ Links
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Getting started
+   :caption: Concepts
+   :name: sec-concepts
+
+   concepts/why-thegates.rst
+   concepts/how-it-works.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Get started
    :name: sec-getting-started
 
    getting-started/quickstart.rst

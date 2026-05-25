@@ -3,9 +3,12 @@
 Introduction
 ============
 
-| Inspired by `Ready Player One`_ and the concept of 3D Internet.
-  We wanted to create a space where many different worlds would be connected into one universe.
-  And those worlds can be made and hosted by everyone 🌌
+| TheGates is a web browser for 3D worlds. Instead of webpages, you
+  visit Godot-built spaces where people meet, play, build, and hang out.
+|
+| The idea is a 3D Internet — many worlds connected into one universe,
+  made and hosted by everyone. (Yes, like `Ready Player One`_, if you
+  want a touchstone.) 🌌
 
 .. _Ready Player One: https://en.wikipedia.org/wiki/Ready_Player_One_(film)
 
@@ -49,27 +52,22 @@ Vision
 How does it work?
 -----------------
 
-It’s very similar to the Internet \(World Wide Web\):
+It's very similar to how you browse the Web:
 
-#. You search or type a link of the world you wanna visit.
-#. TheGates browser downloads all the necessary files and opens them.
-#. Inside this world, you can find other links/portals and follow them.
- 
-| While the Web is built of HTML and JavaScript.
-  We have **Godot Engine** that provides similar functionality.
+#. You search for or paste a link to the world you want to visit.
+#. TheGates downloads the necessary files and opens the world.
+#. Inside, you find more links and portals that take you to other worlds.
 
-Why does Godot Engine work like HTML and JavaScript?
-----------------------------------------------------
-
-Godot uses scenes to describe objects and GDScript to make them behave, so:
+| The Web is built on HTML and JavaScript. TheGates is built on
+  **Godot Engine** — scenes are your HTML, GDScript is your JavaScript.
 
 .. code-block:: ini
 
-   Scenes (saved to tscn file) ~ html files.
-   GDScript ~ javascript.
+   Scenes (saved to .tscn)  ~  html files
+   GDScript                 ~  javascript
 
-| And the magic here is that Godot can export project files in .pck or .zip format.
-| Then it can load the exported file and run it right away ✨
+| Godot can export a whole project to a single ``.pck`` or ``.zip``
+  file. The browser downloads that file and runs it directly ✨
 
 
 Read more

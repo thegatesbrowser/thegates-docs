@@ -30,6 +30,18 @@ Where do I download the app?
 
 | From `thegates.io <https://thegates.io/>`__.
 
+Where can I find worlds to visit?
+---------------------------------
+
+| When you open TheGates, the home screen shows a row of featured gates
+  — including **Welcome**, a 3D hub world where you can walk through
+  portals to discover more. There's also a search bar at the top — type
+  what you're looking for the way you would in a web search.
+|
+| The ecosystem is still small, so search hits depend on what's
+  published. If you have a gate URL from a friend, paste it in and
+  you're in.
+
 Is it open-source?
 ------------------
 

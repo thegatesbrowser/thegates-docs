@@ -43,4 +43,5 @@ Start here
 ----------
 
 * Build your first world with :doc:`/getting-started/quickstart`.
-* Read :doc:`/concepts/why-thegates` for the worldview behind the project.
+* Read :doc:`/about/introduction` for a quick orientation, or visit
+  `thegates.io <https://thegates.io>`__ for the broader vision.

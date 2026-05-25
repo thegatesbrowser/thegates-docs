@@ -35,3 +35,28 @@ recipes look like a stub. Drafts saved in
   enough to commit to publicly.
 - **Changelog page** — start one once there's a v1.1 to add. v1.0
   alone in a changelog reads thin.
+
+## Post-restructure follow-ups
+
+Items surfaced during the About + Concepts → About + Architecture
+restructure (see git log: the deletion of `concepts/`, addition of
+`architecture/`).
+
+- **Architecture pillar may grow.** Single page at launch
+  (`architecture/overview.rst`). Add deeper pages (shared GPU texture
+  details, command channel internals, sandbox internals beyond what
+  Security covers) only when at least one reader asks. Don't
+  pre-build.
+- **Refresh the Introduction screenshot if the launcher UI changes.**
+  Using `_static/launcher_home.png` (copied from
+  `../thegates/screenshots/1-home.png` at restructure time). If the
+  home screen changes meaningfully post-v1.0, refresh.
+- **Mention the Godot Web Editor in Quickstart prerequisites.**
+  `../web-editor/` hosts the official Godot Web Editor (Godot's WASM
+  build) as a no-install alternative for creators. Surface it in
+  Quickstart prerequisites — *"or use the Godot Web Editor at
+  &lt;url&gt;"* — once the hosted URL is confirmed stable and
+  supported.
+- **In-app docs link target.** If the launcher's Help / Docs button
+  links into the docs, confirm it lands on the new
+  `about/introduction.rst` and update if needed.

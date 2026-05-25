@@ -1966,3 +1966,21 @@ p + .classref-constant {
 footer div[role="contentinfo"] p {
     white-space: pre-line;
 }
+
+/* Homepage hero screenshot, pinned to the left of the content column. */
+.rst-content img.home-pic-left {
+    display: block;
+    margin: 1.5em auto 3em 0;
+    max-width: 720px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Give standalone images more breathing room before the next section. */
+.rst-content .section > img,
+.rst-content section > img,
+.rst-content .figure {
+    margin-bottom: 2.5em;
+}

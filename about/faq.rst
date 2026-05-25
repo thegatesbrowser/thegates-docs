@@ -3,68 +3,160 @@
 Frequently asked questions
 ==========================
 
-Is this a new metaverse?
-------------------------
+| Short answers to the most common questions about TheGates.
+| Follow the links for deeper documentation.
 
-| Not exactly. TheGates treats the internet as a network of 3D worlds (built with Godot) that you can browse via links, similar to how you navigate web pages today.
 
-What do I need to build a world?
---------------------------------
+For visitors
+------------
 
-* `Godot 4.5 <https://godotengine.org/download/>`__
-* Rendering method set to ``Forward+``
-* A ``.gate`` file that references your exported pack and images (see :doc:`/getting-started/quickstart`)
+Is this a metaverse?
+~~~~~~~~~~~~~~~~~~~~
 
-How do I host and test locally?
--------------------------------
+| Not exactly.
+|
+| TheGates treats the internet as a network of 3D worlds you open
+  by URL — closer to the web browser model than to a single
+  centralized platform.
 
-| Run a local HTTP server in your project folder and open your ``.gate`` URL in TheGates app. See :doc:`/getting-started/quickstart`.
 
-Which platforms does TheGates support?
---------------------------------------
+Do I install worlds separately?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Windows, Linux, and macOS.
+| No.
+|
+| Opening a gate works more like opening a website than installing
+  a game. The launcher downloads the gate automatically when you
+  visit its URL.
 
-Where do I download the app?
-----------------------------
-
-| From `thegates.io <https://thegates.io/>`__.
 
 Where can I find worlds to visit?
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| When you open TheGates, the home screen shows a row of featured gates
-  — including **Welcome**, a 3D hub world where you can walk through
-  portals to discover more. There's also a search bar at the top — type
-  what you're looking for the way you would in a web search.
+| The launcher home screen includes featured gates and a search bar.
 |
-| The ecosystem is still small, so search hits depend on what's
-  published. If you have a gate URL from a friend, paste it in and
-  you're in.
+| One of the featured gates is **Welcome** — a 3D hub world with
+  portals to other gates.
+|
+| You can also paste a direct gate URL from a friend or website.
 
-Is it open-source?
-------------------
 
-| Yes, the project is open-source. Explore the repositories on `GitHub <https://github.com/thegatesbrowser>`__.
+Which platforms does TheGates support?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Windows, Linux, and macOS.
+|
+| Download the launcher from
+  `thegates.io <https://thegates.io>`__.
+
+
+For creators
+------------
+
+What do I need to build a gate?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| - `Godot 4.5 <https://godotengine.org/download/>`__
+| - Rendering method set to ``Forward+``
+| - A ``.gate`` manifest referencing your exported project
+|
+| See :doc:`/getting-started/quickstart`.
+
+
+How do I publish a gate?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Install the
+  `TheGates Export plugin <https://godotengine.org/asset-library/asset/2882>`__
+  from the Godot Asset Library, click
+  **Publish to TheGates**, and you get a hosted URL back.
+|
+| Self-hosting on your own HTTP server is also supported.
+|
+| See :doc:`/getting-started/hosting`.
+
+
+Can I self-host my gate?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Yes.
+|
+| A gate is just a manifest and exported files served over HTTP.
+  Any normal HTTP server works.
+|
+| See :doc:`/getting-started/hosting`.
+
+
+Can gates link to other gates?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Yes.
+|
+| Gates can open other gates by URL, similar to webpages linking
+  to other webpages.
+|
+| See :doc:`/getting-started/linking-gates`.
+
+
+Can I use GDExtension or native libraries?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Yes.
+|
+| Add platform-specific libraries in the ``[libraries]`` section
+  of your ``.gate`` file.
+|
+| See :doc:`/reference/gate_file`.
+
+
+Does every gate run its own engine version?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Yes.
+|
+| Each gate declares the Godot version it was built against.
+  The launcher downloads and runs the matching renderer version
+  for that gate.
+|
+| This allows older gates to keep working even as newer renderer
+  versions ship.
+|
+| See :doc:`/architecture/overview`.
+
+
+Trust and safety
+----------------
 
 Is it safe to run third-party worlds?
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| v1.0 ships cross-platform sandboxing. Each gate runs in a separate, locked-down process using code derived from Chromium's sandbox — the same isolation Chrome uses for browser tabs. See :doc:`/security/overview`.
+| Every gate runs in its own OS-level sandbox on Windows,
+  Linux, and macOS.
 |
-| Treat gates the same way you'd treat unknown websites: trusted to the extent you trust the publisher.
+| A gate cannot directly access your files, your home network,
+  or other running gates.
+|
+| Treat gates the same way you treat websites: trusted to the
+  extent you trust the publisher.
+|
+| See :doc:`/security/overview`.
 
-Can I link to other worlds from my game?
-----------------------------------------
 
-| Yes. Use the engine command from GDScript (see example in :doc:`/getting-started/quickstart`).
+Is TheGates open source?
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Can I use GDExtension/native libraries?
----------------------------------------
+| Yes.
+|
+| The launcher, renderer, backend, and tooling are open source.
+|
+| Explore the repositories on
+  `GitHub <https://github.com/thegatesbrowser>`__.
 
-| Yes. Provide platform builds in the ``[libraries]`` section of your ``.gate`` file. See :doc:`/getting-started/quickstart` for the exact format and requirements.
 
-Where can I get help?
----------------------
+Need more help?
+---------------
 
-| Join our :doc:`/community/community` (Discord, social, email), or open an issue on GitHub.
+| Join the community or open an issue on GitHub.
+
+* :doc:`/community/community`
+* :doc:`/community/contribute`

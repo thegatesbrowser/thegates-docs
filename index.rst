@@ -1,59 +1,59 @@
 TheGates Docs
 =============
 
-| **A web browser for 3D worlds.**
-| Visit Godot-built worlds via URL. No installs, no accounts, sandboxed by default.
+| A web browser for Godot worlds.
+| Open worlds by URL the way you open webpages.
 
-----
+.. image:: /_static/welcome_hub.png
+   :alt: Inside the Welcome hub world — a 3D space with a
+         robot character, a glowing portal, and the "TheGates"
+         sign in the sky.
+   :class: home-pic-left
 
-Choose your path
-----------------
 
-Explore worlds
-~~~~~~~~~~~~~~
-
-| Download TheGates from `thegates.io <https://thegates.io>`__, paste any
-  gate URL into the address bar, and walk in.
-
-* :doc:`What is TheGates? </about/introduction>`
-* :doc:`Frequently asked questions </about/faq>`
+Start here
+----------
 
 Build a gate
 ~~~~~~~~~~~~
 
-| If you know `Godot Engine <https://godotengine.org>`__, you can publish a
-  gate in five minutes.
+| Publish your first world in about five minutes.
 
-* :doc:`Quickstart </getting-started/quickstart>` — your first gate, end-to-end
-* :doc:`How it works </concepts/how-it-works>` — the two-process model in plain language
-* :doc:`Why TheGates? </concepts/why-thegates>` — the worldview behind it
+* :doc:`Quickstart </getting-started/quickstart>`
+* :doc:`Introduction </about/introduction>`
+* :doc:`Hosting and self-hosting </getting-started/hosting>`
 
-Contribute to the engine
-~~~~~~~~~~~~~~~~~~~~~~~~
 
-| TheGates is open source. Help shape the 3D internet.
+Understand the architecture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* :doc:`How to contribute </community/contribute>`
-* `Source code on GitHub <https://github.com/thegatesbrowser>`__
+| How the launcher, renderer, and sandbox fit together.
 
-----
+* :doc:`Architecture overview </architecture/overview>`
+* :doc:`Security overview </security/overview>`
 
-What's new in v1.0
-------------------
 
-| Cross-platform sandboxing — every gate runs locked down on Windows,
-  Linux, and macOS. :doc:`Read the sandboxing overview </security/overview>`.
+| Want to explore worlds instead of build them?
+| Download the app from `thegates.io <https://thegates.io>`__.
+
 
 ----
+
 
 Get involved
 ------------
 
-| If you don't understand something or cannot find what you are looking for,
-  help us improve the documentation by letting us know. Fix mistakes, add examples, or suggest edits, every contribution helps.
-|
-| Submit an issue or pull request on the `GitHub repository <https://github.com/thegatesbrowser/thegates-docs>`__
-  or talk to us on the `Discord server <https://discord.com/invite/JwpScU8xm6>`__.
+| The browser, backend, and tooling are open source. Help shape the
+  3D internet.
+
+* :doc:`How to contribute </community/contribute>`
+* `GitHub organization <https://github.com/thegatesbrowser>`__
+* `Discord server <https://discord.com/invite/JwpScU8xm6>`__
+
+| Found a mistake in the docs or have a suggestion? Submit an issue
+  or pull request on the
+  `docs repository <https://github.com/thegatesbrowser/thegates-docs>`__.
+
 
 Links
 -----
@@ -61,6 +61,7 @@ Links
 * Website: `thegates.io <https://thegates.io>`__
 * GitHub: `thegatesbrowser <https://github.com/thegatesbrowser>`__
 * Demo video: `YouTube <https://youtu.be/FU4MTPEdqwU?si=dNm3yFojDD1Ga08m>`__
+
 
 .. toctree::
    :hidden:
@@ -70,16 +71,6 @@ Links
 
    about/introduction.rst
    about/faq.rst
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Concepts
-   :name: sec-concepts
-
-   concepts/why-thegates.rst
-   concepts/what-is-a-gate.rst
-   concepts/how-it-works.rst
 
 .. toctree::
    :hidden:
@@ -104,6 +95,14 @@ Links
    security/network_policy.rst
    security/wayland_and_x11.rst
    security/verify_the_sandbox.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Architecture
+   :name: sec-architecture
+
+   architecture/overview.rst
 
 .. toctree::
    :hidden:

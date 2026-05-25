@@ -52,7 +52,7 @@ Fields
 * ``image``: Path to a larger preview/cover image.
 * ``resource_pack``: Path to a ZIP containing the exported Godot project.
 * ``godot_version``: Target Godot version string (supported versions: ``4.3``, ``4.5``).
-* ``discoverable``: ``true`` or ``false``; if ``true``, the world can be indexed.
+* ``discoverable``: ``true`` or ``false``. If ``true``, the gate is indexed by TheGates' search backend and becomes visible to users typing queries in the in-app search bar. If ``false``, the gate stays out of search — anyone with the URL can still visit, but it won't show up in results.
 
 | ``[libraries]``
 

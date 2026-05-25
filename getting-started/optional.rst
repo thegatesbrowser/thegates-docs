@@ -1,29 +1,12 @@
 .. _doc_optional:
 
-Going further
-=============
+Native libraries (GDExtension)
+==============================
 
-| Two extras once you've shipped your first gate: linking to other gates
-  from your world, and bundling native libraries with GDExtension.
-
-
-Link to other worlds
---------------------
-
-| To make a user follow a link to another gate (e.g., when they enter a portal), call from GDScript:
-
-.. code-block:: python
-
-   if get_tree().has_method("send_command"):
-      get_tree().send_command("open_gate", ["https://example.com/project.gate"])
-
-| See more in :doc:`/reference/command_channel`.
-
-GDExtension
------------
-
-| If you use addons with GDExtension in your project,
-  you can edit your gate file to load the libraries (this feature is coming to export plugin soon).
+| If your gate uses Godot's GDExtension to load native libraries, you
+  need to declare them in your ``.gate`` file. The export plugin
+  doesn't auto-detect these yet — you'll need to edit the manifest
+  manually.
 
 * Copy the GDExtension file section **[libraries]** to the gate file.
 
@@ -52,16 +35,17 @@ GDExtension
 
    # file paths are relative to the .gate file unless absolute
 
-.. warning:: 
+.. warning::
 
    | **Windows**, **Linux**, and **macOS** libraries required.
    | **Debug** and **Release** are also required (can be the same file).
 
 | See more in :doc:`/reference/gate_file`.
 
-Next steps
-----------
 
-* :doc:`/getting-started/hosting` in your own server.
-* Check out :doc:`/reference/command_channel`.
-* Join the :doc:`/community/community` for help and feedback.
+See also
+--------
+
+* :doc:`/getting-started/hosting`
+* :doc:`/getting-started/linking-gates`
+* :doc:`/reference/gate_file`

@@ -47,6 +47,7 @@ Stuck?
 Next steps
 ----------
 
-* :doc:`/getting-started/hosting` in your own server.
-* Follow :doc:`/getting-started/optional`.
+* :doc:`/getting-started/best-practices` — tips before you ship.
+* :doc:`/getting-started/hosting` on your own server.
+* :doc:`/getting-started/linking-gates` from inside your world.
 * Join the :doc:`/community/community` for help and feedback.

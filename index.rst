@@ -78,6 +78,7 @@ Links
    :name: sec-concepts
 
    concepts/why-thegates.rst
+   concepts/what-is-a-gate.rst
    concepts/how-it-works.rst
 
 .. toctree::
@@ -87,8 +88,11 @@ Links
    :name: sec-getting-started
 
    getting-started/quickstart.rst
+   getting-started/best-practices.rst
    getting-started/hosting.rst
+   getting-started/linking-gates.rst
    getting-started/optional.rst
+   getting-started/troubleshooting.rst
 
 .. toctree::
    :hidden:

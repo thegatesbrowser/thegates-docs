@@ -57,4 +57,4 @@ The URL of the ``.gate`` file is the gate URL. Paste it into the TheGates app:
 
   https://your-host.example.com/yourproject.gate
 
-| See :doc:`/getting-started/optional` for linking between gates.
+| See :doc:`/getting-started/linking-gates` for linking between gates.

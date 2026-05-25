@@ -78,4 +78,3 @@ See also
 
 - :doc:`how-it-works` — the architecture behind this.
 - :doc:`/reference/gate_file` — the full manifest spec.
-- :doc:`/getting-started/best-practices` — tips before you ship.

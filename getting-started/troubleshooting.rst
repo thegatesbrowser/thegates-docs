@@ -106,4 +106,3 @@ See also
 --------
 
 - :doc:`/community/community` — get help from the community.
-- :doc:`best-practices` — avoid common pitfalls before they happen.
